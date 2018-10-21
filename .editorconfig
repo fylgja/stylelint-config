@@ -10,17 +10,3 @@ end_of_line = lf
 charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
-
-[*.{md,mdx}]
-indent_size = 4
-trim_trailing_whitespace = false
-max_line_length = 80
-
-[*.{less,sass,scss,styl,stylus,js,ts,jsx,tsx,mjs,vue}]
-indent_size = 4
-max_line_length = 80
-
-[index.js]
-# Use 2
-# Same as the json format version
-indent_size = 2
