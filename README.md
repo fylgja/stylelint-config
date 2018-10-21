@@ -1,22 +1,22 @@
 # Fylgja stylelint
 
-[![NPM version](https://img.shields.io/npm/v/stylelint-config-fylgja.svg)](https://www.npmjs.org/package/stylelint-config-fylgja)
+[![NPM version](https://img.shields.io/npm/v/@fylgja/stylelint-config.svg)](https://www.npmjs.org/package/@fylgja/stylelint-config)
 
 A sharable stylelint config object that enforces Fylgja's css rules
 
 ## Installation
 
 ```bash
-npm i --save-dev stylelint-config-fylgja
+npm i --save-dev @fylgja/stylelint-config
 ```
 
 ## Usage
 
-If you've installed `stylelint-config-fylgja` locally within your project, just set your `stylelint` config to:
+If you've installed `@fylgja/stylelint-config` locally within your project, just set your `stylelint` config to:
 
 ```json
 {
-  "extends": "stylelint-config-fylgja"
+  "extends": "@fylgja/stylelint-config"
 }
 ```
 
@@ -24,7 +24,7 @@ If you've globally installed `stylelint-config-fylgja` using the `-g` flag, then
 
 ```json
 {
-  "extends": "<PATH-TO>/stylelint-config-fylgja"
+  "extends": "<PATH-TO>/@fylgja/stylelint-config"
 }
 ```
 
@@ -34,7 +34,7 @@ Simply add a `"rules"` key to your config, then add your overrides and additions
 
 ```json
 {
-  "extends": "stylelint-config-fylgja",
+  "extends": "@fylgja/stylelint-config",
   "rules": {
     "comment-empty-line-before": ["always", {
       "except": ["first-nested"],
@@ -49,4 +49,4 @@ Simply add a `"rules"` key to your config, then add your overrides and additions
 * Include scss rules from [stylelint-scss](https://github.com/kristerkari/stylelint-scss), or add it as extension
 
 ## License
-[MIT](LICENSE) © [Siteation](https://siteation.nl/)
+[MIT](LICENSE) © [Fylgja](https://getfylgja.com/)
