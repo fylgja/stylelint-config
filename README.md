@@ -20,7 +20,7 @@ If you've installed `@fylgja/stylelint-config` locally within your project, just
 }
 ```
 
-If you've globally installed `stylelint-config-fylgja` using the `-g` flag, then you'll need to use the absolute path to `stylelint-config-fylgja` in your config e.g.
+If you've globally installed `@fylgja/stylelint-config` using the `-g` flag, then you'll need to use the absolute path to `@fylgja/stylelint-config` in your config e.g.
 
 ```json
 {
