@@ -1,16 +1,16 @@
 {
-  "name": "stylelint-config-fylgja",
+  "name": "@fylgja/stylelint-config",
   "version": "1.0.0",
   "description": "Sharable stylelint config used by Fylgja packages",
   "homepage": "http://getfylgja.com/",
-  "author": "Siteation",
+  "author": "Fylgja",
   "license": "MIT",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Siteation/stylelint-config-fylgja.git"
+    "url": "https://github.com/getfylgja/stylelint-config-fylgja.git"
   },
-  "bugs": "https://github.com/Siteation/stylelint-config-fylgja/issues",
+  "bugs": "https://github.com/getfylgja/stylelint-config-fylgja/issues",
   "files": [
     "index.js"
   ],
