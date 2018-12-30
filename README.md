@@ -7,7 +7,7 @@ A sharable stylelint config object that enforces Fylgja's css rules
 ## Installation
 
 ```bash
-npm i --save-dev @fylgja/stylelint-config
+npm i -D stylelint @fylgja/stylelint-config
 ```
 
 ## Usage
@@ -27,6 +27,8 @@ If you've globally installed `@fylgja/stylelint-config` using the `-g` flag, the
   "extends": "<PATH-TO>/@fylgja/stylelint-config"
 }
 ```
+
+_Since stylelint 9.7.0, you don't need the absolute path_
 
 ### Extending the config
 

@@ -1,26 +1,26 @@
 {
   "name": "@fylgja/stylelint-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Sharable stylelint config used by Fylgja packages",
   "homepage": "http://getfylgja.com/",
   "author": "Fylgja",
   "license": "MIT",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/getfylgja/stylelint-config-fylgja.git"
-  },
-  "bugs": "https://github.com/getfylgja/stylelint-config-fylgja/issues",
-  "files": [
-    "index.js"
-  ],
-  "peerDependencies": {
-    "stylelint": "^9.5.0"
-  },
   "keywords": [
     "fylgja",
     "stylelint",
     "stylelint-config",
     "css"
-  ]
+  ],
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/getfylgja/stylelint-config-fylgja.git"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "peerDependencies": {
+    "stylelint": ">= 9.5.0 < 10"
+  }
 }
