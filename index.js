@@ -159,7 +159,9 @@ module.exports = {
     "selector-max-empty-lines": 1,
     "selector-max-id": 0,
     "selector-max-specificity": "0,4,1",
-    "selector-max-type": 2,
+    "selector-max-type": [2, {
+      "ignore": ["child", "compounded", "descendant"]
+    }],
     "selector-max-universal": 1,
     "selector-nested-pattern": null,
     "selector-no-qualifying-type": [true, {

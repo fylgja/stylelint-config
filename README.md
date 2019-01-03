@@ -38,10 +38,11 @@ Simply add a `"rules"` key to your config, then add your overrides and additions
 {
   "extends": "@fylgja/stylelint-config",
   "rules": {
-    "comment-empty-line-before": ["always", {
-      "except": ["first-nested"],
-      "ignore": ["after-comment", "stylelint-commands"]
-    }]
+    "at-rule-empty-line-before": ["always", {
+      "except": ["blockless-after-same-name-blockless"],
+      "ignore": ["after-comment"],
+      "ignoreAtRules": ["import", "if", "else"]
+    }],
   }
 }
 ```

@@ -1,5 +1,9 @@
 # CHANELOG
 
+## 1.0.3
+* FIX: rule selector-max-type, missing ignore rules
+* IMP: editorconfig indent rule for index.js (stylelint-config)
+
 ## 1.0.2
 * IMP: add new rules to editorconfig
 * IMP: gitingnore
