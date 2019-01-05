@@ -12,7 +12,6 @@
     "css"
   ],
   "main": "index.js",
-  "scripts": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/getfylgja/stylelint-config-fylgja.git"
