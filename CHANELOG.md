@@ -1,5 +1,9 @@
 # CHANELOG
 
+## 1.0.4
+* FIX: peerDep version
+* DEL: lockfile
+
 ## 1.0.3
 * FIX: rule selector-max-type, missing ignore rules
 * IMP: editorconfig indent rule for index.js (stylelint-config)
