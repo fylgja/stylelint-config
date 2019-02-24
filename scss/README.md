@@ -5,7 +5,7 @@ Extra rules for when you use SCSS.
 ## Usage
 
 Same as for the main stylelint config.
-But now add scss to the end to also load theses rules.
+But now add scss to the end to also load these rules.
 
 ```json
 {
