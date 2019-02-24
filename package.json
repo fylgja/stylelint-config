@@ -20,10 +20,10 @@
   "engines": {
     "node": ">=6"
   },
-  "peerDependencies": {
-    "stylelint": "^9.10.*"
-  },
   "dependencies": {
     "stylelint-scss": "^3.5.*"
+  },
+  "peerDependencies": {
+    "stylelint": "^9.10.*"
   }
 }
