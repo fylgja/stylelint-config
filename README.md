@@ -125,8 +125,6 @@ That is described in our [CSS order DOC](./order/README.md).
 
 ## Rules
 
-Each rule that is set, is down here.
-
 For information on what each rule does.
 [Checkout the orignal DOC](https://stylelint.io/user-guide/rules/)
 or the rules folder on [Stylelint Github Page](https://github.com/stylelint/stylelint/tree/master/lib/rules).

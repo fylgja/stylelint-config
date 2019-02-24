@@ -4,12 +4,8 @@ Extra rules for when you use SCSS.
 
 ## Usage
 
-_[For the Installation see the main README](../README.md)_
-
-_Same as for the main stylelint._
-
-If you've installed `@fylgja/stylelint-config`.
-Set your `stylelint` config to:
+Same as for the main stylelint config.
+But now add scss to the end to also load theses rules.
 
 ```json
 {
@@ -17,11 +13,7 @@ Set your `stylelint` config to:
 }
 ```
 
-Don't forget to add `scss` at the end to include the SCSS rules.
-
 ## List of Rules
-
-Each rule that is set is down here.
 
 For information on what each rule does.
 [Checkout the SCSS Stylelint plugin DOC](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules).
