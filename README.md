@@ -243,6 +243,14 @@ _These are better for project specific rules (if needed)._
   _The css dept is enforced via `selector-max`._
 - `no-descending-specificity`: true
   - severity: warning
+- `no-duplicate-at-import-rules`: true
+- `no-duplicate-selectors`: true
+- `no-empty-first-line`: true
+- `no-empty-source`: true
+- `no-eol-whitespace`: true
+- `no-extra-semicolons`: true
+- `no-invalid-double-slash-comments`: true
+- `no-missing-end-of-source-newline`: true
 
 ### Keyframe/Animation
 
