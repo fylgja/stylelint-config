@@ -1,0 +1,45 @@
+# Fylgja stylelint-config (LESS)
+
+There no specific rules set for LESS.
+And we don't really work with LESS anymore.
+If there are still rules that conflict with your LESS code please share what.
+
+That said there are some rules set here,
+that unset some rules that conflict with the less code.
+
+## Usage
+
+Same as for the main stylelint config.
+But now add less to the end to also load these rules.
+
+```json
+{
+  "extends": "@fylgja/stylelint-config/less"
+}
+```
+
+## List of Rules
+
+### At-rule
+
+- `at-rule-no-unknown`: true
+  - ignoreAtRules: plugin
+
+### Media feature
+
+- media-feature-name-no-unknown: null
+  - _Error for LESS variables_
+
+### General / Sheet
+
+- `no-extra-semicolons`: null
+  - _Error for rulesets_
+
+### Selector
+
+- `selector-max-compound-selectors`: 6
+  - _Give a little more space to use LESS mixin's_
+- `selector-max-id`: 1
+  - _Allows the use of LESS Maps_
+- `selector-max-specificity` null
+  - _To much LESS selectors that look like CSS causing errors._
