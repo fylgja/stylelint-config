@@ -20,6 +20,9 @@
     "node": ">=6"
   },
   "peerDependencies": {
-    "stylelint": "^9.5.0"
+    "stylelint": "^9.5"
+  },
+  "dependencies": {
+    "stylelint-scss": "^3.5"
   }
 }
