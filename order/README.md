@@ -27,16 +27,16 @@ Others follow the Alphabetical order or something else 🤷‍.
 
 So what is this DOM like order.
 <details style="margin-bottom: 16px;">
-<summary>Well, in here is big lump of code that gives a general idea.</summary>
+<summary>Well, in here is big lump of code that gives you a general idea.</summary>
 
 ```SCSS
 .order-example {
-    // Content/Counter
+    // var's/special setters
+    --color-theme: rebeccapurple;
+    content: attr();
     counter-reset: section;
     counter-increment: section;
-    content: attr();
     quotes: '"' '"' "'" "'";
-    list-style: square;
     // Box
     box-sizing: border-box;
     position: absolute;
@@ -48,6 +48,7 @@ So what is this DOM like order.
     float: left;
     // Layout
     display: block;
+    list-style: square;
     grid-column: span 2;
     flex-flow: row wrap;
     justify-content: center;
@@ -61,6 +62,8 @@ So what is this DOM like order.
     height: auto;
     clip-path: circle();
     shape-outside: img();
+    margin: auto;
+    padding: 0;
     border-collapse: collapse;
     border-radius: 50%;
     border: 1px solid currentColor;
@@ -69,7 +72,9 @@ So what is this DOM like order.
     // Color
     background-color: #eee;
     color: #333;
-    fill: #333;
+    fill: currentColor; // svg
+    stroke: currentColor; // svg
+    text-stroke: 4px #eee;
     caret-color: #333;
     // Font
     font-family: system-ui, sans-serif;
@@ -133,41 +138,61 @@ So **NO** to this 😫
 ### FAQ
 
 <details>
-<summary>Why is `float` part of the box group</summary>
-Float moves the box like position while flex and grid move the childeren.
-</details>
-
-<details>
 <summary>Is there also an order for each group?</summary>
+
 Soft yes.
 
 The properties that have a direction should follow the DOM order.
 
-That is: top, right, bottom, left.
-Or block, inline.
+That is: top, right, bottom, left or block, inline.
 
 Also width comes before height.
+
 </details>
 
 <details>
-<summary>Why is the content/counter group before the box group?</summary>
-The properties in this group are specificly used for a special case.
-And for that reason special before properties.
+<summary>Why is the var's/special setters group before the box group?</summary>
 
-Unlike the Special properties group that comes at the end.
+The properties in this group are specificly used to set values.
+
+CSS var should always come before all, similair to SCSS var's.
+And the other propeties are used to set values used by the content property.
+
 </details>
 
 <details>
 <summary>Should all browser specific styles come at the end?</summary>
+
 Depends on the style.
 
-Browsers prefixes should be avoided.
-Use autoprefixer instead.
+Browsers prefixes should be avoided!
+Use [autoprefixer](https://github.com/postcss/autoprefixer) instead.
 
 But if they are needed.
 And they it only exist for 1 specific browers.
 
 Then _Yes_ that property should come at the end.
+
+</details>
+
+<details>
+<summary>Why is float part of the box group</summary>
+
+Float moves the box like position while flex and grid move the childeren.
+
+</details>
+
+<details>
+<summary>Why is list-style part of the layout group</summary>
+
+Not really sure.
+Still working out the best position for it.
+For now where using the default order used by Chrome and Firefox.
+
+Another reason is that the `display` propery can have the value `list-item`.
+
+_Suggetions are welcome_
+
 </details>
 
 ## Exceptions & Preprocessors
