@@ -26,8 +26,8 @@ We follow a DOM Like order.
 Others follow the Alphabetical order or something else 🤷‍.
 
 So what is this DOM like order.
-<details style="margin-bottom: 16px;">
-<summary>Well, in here is big lump of code that gives you a general idea.</summary>
+
+<details><summary>Well, in here is big lump of code that gives you a general idea.</summary>
 
 ```SCSS
 .order-example {
@@ -108,6 +108,7 @@ So what is this DOM like order.
     -webkit-tap-highlight-color: transparent;
 }
 ```
+
 </details>
 
 We follow a set of groups that specify how we order our code.
@@ -137,8 +138,7 @@ So **NO** to this 😫
 
 ### FAQ
 
-<details>
-<summary>Is there also an order for each group?</summary>
+<details><summary>Is there also an order for each group?</summary>
 
 Soft yes.
 
@@ -150,8 +150,7 @@ Also width comes before height.
 
 </details>
 
-<details>
-<summary>Why is the var's/special setters group before the box group?</summary>
+<details><summary>Why is the var's/special setters group before the box group?</summary>
 
 The properties in this group are specificly used to set values.
 
@@ -160,8 +159,7 @@ And the other propeties are used to set values used by the content property.
 
 </details>
 
-<details>
-<summary>Should all browser specific styles come at the end?</summary>
+<details><summary>Should all browser specific styles come at the end?</summary>
 
 Depends on the style.
 
@@ -175,15 +173,13 @@ Then _Yes_ that property should come at the end.
 
 </details>
 
-<details>
-<summary>Why is float part of the box group</summary>
+<details><summary>Why is float part of the box group</summary>
 
 Float moves the box like position while flex and grid move the childeren.
 
 </details>
 
-<details>
-<summary>Why is list-style part of the layout group</summary>
+<details><summary>Why is list-style part of the layout group</summary>
 
 Not really sure.
 Still working out the best position for it.
