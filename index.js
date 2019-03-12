@@ -97,10 +97,6 @@ module.exports = {
         severity: "warning"
       }
     ],
-    "font-weight-notation": [
-      "numeric",
-      { ignore: ["relative"], severity: "warning" }
-    ],
     "function-calc-no-unspaced-operator": true,
     "function-comma-newline-after": "always-multi-line",
     "function-comma-space-after": "always-single-line",

@@ -2,6 +2,8 @@
 
 ## 2.1.0 - 12-03-19
 * IMP: make selector-no-qualifying-type less strict by allowing classes
+* DEL: font-weight-notation rule
+  * This rule give issues with some style cases and scss functions like nth
 
 ## 2.0.0 - 22-02-19
 * IMP: Order doc

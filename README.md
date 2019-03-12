@@ -211,9 +211,6 @@ _These are better for project specific rules (if needed)._
   - severity: warning
 - `font-family-no-missing-generic-family-keyword`: true
   - severity: warning
-- `font-weight-notation`: numeric
-  - ignore: relative
-  - severity: warning
 
 ### Function
 
