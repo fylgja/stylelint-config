@@ -1,6 +1,9 @@
 # CHANELOG
 
-## 2.00 - 22-02-19
+## 2.1.0 - 12-03-19
+* IMP: make selector-no-qualifying-type less strict by allowing classes
+
+## 2.0.0 - 22-02-19
 * IMP: Order doc
 * ADD: SCSS plugin as dependency
 * IMP: main stylelintconfig rules → _See readme what is include_

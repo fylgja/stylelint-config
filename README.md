@@ -319,7 +319,7 @@ _These are better for project specific rules (if needed)._
 - `selector-max-type`: 2
 - `selector-max-universal`: 1
 - `selector-no-qualifying-type`: true
-  - ignore: attribute
+  - ignore: attribute, class
 - `selector-no-vendor-prefix`: true
 - `selector-pseudo-class-case`: lower
 - `selector-pseudo-class-no-unknown`: true
