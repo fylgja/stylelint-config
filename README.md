@@ -229,8 +229,7 @@ _These are better for project specific rules (if needed)._
 
 ### General / Sheet
 
-- `indentation`: null
-  - _This is done via the [editorconfig](https://editorconfig.org/) instead._
+- `indentation`: 4
 - `max-empty-lines`: 1
 - `max-line-length`: 80
   - ignorePattern: URI's

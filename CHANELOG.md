@@ -1,7 +1,10 @@
 # Changelog
 
-## 2.1.1 - 14-04-19
+## 2.2.0 - 14-04-19
 * ADD: title to changelog
+* Set indentation rule to 4
+  * Originally wanted this done via the editorconfig instead, but chose to set this.
+  As this fixes issue with the VSCode plugin and the cli cmd.
 
 ## 2.1.0 - 12-03-19
 * IMP: make selector-no-qualifying-type less strict by allowing classes
