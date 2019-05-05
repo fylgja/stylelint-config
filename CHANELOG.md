@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.2.1 - 05-05-19
+* IMP: formating
+
 ## 2.2.0 - 14-04-19
 * ADD: title to changelog
 * Set indentation rule to 4

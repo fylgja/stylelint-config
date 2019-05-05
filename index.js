@@ -30,9 +30,7 @@ module.exports = {
     "block-closing-brace-empty-line-before": "never",
     "block-closing-brace-newline-after": [
       "always-multi-line",
-      {
-        ignoreAtRules: ["if", "else"]
-      }
+      { ignoreAtRules: ["if", "else"] }
     ],
     "block-closing-brace-newline-before": "always-multi-line",
     "block-closing-brace-space-after": "always-single-line",
@@ -44,9 +42,7 @@ module.exports = {
     "block-opening-brace-space-before": "always",
     "color-hex-case": [
       "lower",
-      {
-        message: "Lowercase letters are easier to distinguish from numbers"
-      }
+      { message: "Lowercase letters are easier to distinguish from numbers" }
     ],
     "color-hex-length": "short",
     "color-no-hex": null,
@@ -65,9 +61,7 @@ module.exports = {
     "declaration-bang-space-before": "always",
     "declaration-block-no-duplicate-properties": [
       true,
-      {
-        ignore: ["consecutive-duplicates-with-different-values"]
-      }
+      { ignore: ["consecutive-duplicates-with-different-values"] }
     ],
     "declaration-block-no-redundant-longhand-properties": true,
     "declaration-block-no-shorthand-property-overrides": true,
@@ -85,17 +79,10 @@ module.exports = {
       "always-where-recommended",
       { severity: "warning" }
     ],
-    "font-family-no-duplicate-names": [
-      true,
-      {
-        severity: "warning"
-      }
-    ],
+    "font-family-no-duplicate-names": [true, { severity: "warning" }],
     "font-family-no-missing-generic-family-keyword": [
       true,
-      {
-        severity: "warning"
-      }
+      { severity: "warning" }
     ],
     "function-calc-no-unspaced-operator": true,
     "function-comma-newline-after": "always-multi-line",
@@ -103,12 +90,7 @@ module.exports = {
     "function-comma-space-before": "never",
     "function-linear-gradient-no-nonstandard-direction": true,
     "function-max-empty-lines": 0,
-    "function-name-case": [
-      "lower",
-      {
-        ignoreFunctions: ["/^get.*$/"]
-      }
-    ],
+    "function-name-case": ["lower", { ignoreFunctions: ["/^get.*$/"] }],
     "function-parentheses-newline-inside": "always-multi-line",
     "function-parentheses-space-inside": "never-single-line",
     "function-url-no-scheme-relative": true,
@@ -129,12 +111,7 @@ module.exports = {
     "media-feature-colon-space-after": "always",
     "media-feature-colon-space-before": "never",
     "media-feature-name-case": "lower",
-    "media-feature-name-no-unknown": [
-      true,
-      {
-        severity: "warning"
-      }
-    ],
+    "media-feature-name-no-unknown": [true, { severity: "warning" }],
     "media-feature-name-no-vendor-prefix": true,
     "media-feature-parentheses-space-inside": "never",
     "media-feature-range-operator-space-after": "always",
@@ -143,12 +120,7 @@ module.exports = {
     "media-query-list-comma-newline-before": "never-multi-line",
     "media-query-list-comma-space-after": "always-single-line",
     "media-query-list-comma-space-before": "never",
-    "no-descending-specificity": [
-      true,
-      {
-        severity: "warning"
-      }
-    ],
+    "no-descending-specificity": [true, { severity: "warning" }],
     "no-duplicate-at-import-rules": true,
     "no-duplicate-selectors": true,
     "no-empty-first-line": true,
@@ -162,12 +134,7 @@ module.exports = {
     "number-no-trailing-zeros": true,
     "property-case": "lower",
     "property-no-unknown": true,
-    "property-no-vendor-prefix": [
-      true,
-      {
-        ignoreProperties: ["appearance"]
-      }
-    ],
+    "property-no-vendor-prefix": [true, { ignoreProperties: ["appearance"] }],
     "rule-empty-line-before": [
       "always-multi-line",
       {
@@ -194,12 +161,7 @@ module.exports = {
     "selector-max-specificity": "0,4,2",
     "selector-max-type": 2,
     "selector-max-universal": 1,
-    "selector-no-qualifying-type": [
-      true,
-      {
-        ignore: ["attribute", "class"]
-      }
-    ],
+    "selector-no-qualifying-type": [true, { ignore: ["attribute", "class"] }],
     "selector-no-vendor-prefix": true,
     "selector-pseudo-class-case": "lower",
     "selector-pseudo-class-no-unknown": true,
@@ -220,11 +182,6 @@ module.exports = {
     "value-list-comma-space-after": "always-single-line",
     "value-list-comma-space-before": "never",
     "value-list-max-empty-lines": 0,
-    "value-no-vendor-prefix": [
-      true,
-      {
-        ignoreValues: ["tap-highlight-color"]
-      }
-    ]
+    "value-no-vendor-prefix": [true, { ignoreValues: ["tap-highlight-color"] }]
   }
 };

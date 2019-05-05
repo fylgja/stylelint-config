@@ -1,12 +1,7 @@
 module.exports = {
   extends: ["../index.js"],
   rules: {
-    "at-rule-no-unknown": [
-      true,
-      {
-        ignoreAtRules: ["import", "plugin"]
-      }
-    ],
+    "at-rule-no-unknown": [true, { ignoreAtRules: ["import", "plugin"] }],
     "media-feature-name-no-unknown": null,
     "no-extra-semicolons": null,
     "selector-max-compound-selectors": 6,
