@@ -30,7 +30,7 @@ But not used as a dependency in our config.
   - [Media feature](#media-feature)
   - [Media query List](#media-query-list)
   - [Number](#number)
-  - [Propery](#propery)
+  - [Property](#property)
   - [Rule](#rule)
   - [Selector](#selector)
   - [Shorthand property](#shorthand-property)
@@ -57,7 +57,7 @@ If you've installed @fylgja/stylelint-config, just set your stylelint config to:
 }
 ```
 
-_SCSS support found onder the [Extensions](#Extensions)_
+_SCSS support found under the [Extensions](#Extensions)_
 
 ## Extending
 
@@ -82,7 +82,7 @@ then add your overrides and additions there.
 
 While the core rules already take preprocessors in account.
 There are some times extra's rules needed.
-To add support for a specific preprcessor.
+To add support for a specific preprocessor.
 
 ### SCSS
 
@@ -126,7 +126,7 @@ That is described in our [CSS order DOC](./order/README.md).
 ## Rules
 
 For information on what each rule does.
-[Checkout the orignal DOC](https://stylelint.io/user-guide/rules/)
+[Checkout the original DOC](https://stylelint.io/user-guide/rules/)
 or the rules folder on [Stylelint Github Page](https://github.com/stylelint/stylelint/tree/master/lib/rules).
 
 _We have not set any [white/black]-list values._
@@ -277,7 +277,7 @@ _These are better for project specific rules (if needed)._
 - `number-max-precision`: 5
 - `number-no-trailing-zeros`: true
 
-### Propery
+### Property
 
 - `property-case`: lower
 - `property-no-unknown`: true

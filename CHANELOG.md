@@ -2,6 +2,7 @@
 
 ## 2.2.2 - 19-05-19
 * IMP: Git URL Changed
+* IMP: doc
 
 ## 2.2.1 - 05-05-19
 * IMP: formating
