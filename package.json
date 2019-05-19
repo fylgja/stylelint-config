@@ -17,13 +17,16 @@
     "type": "git",
     "url": "https://github.com/fylgja/stylelint-config.git"
   },
-  "engines": {
-    "node": ">=6"
+  "bugs": {
+    "url": "https://github.com/fylgja/stylelint-config/issues"
   },
-  "dependencies": {
-    "stylelint-scss": "^3.5.*"
+  "engines": {
+    "node": ">=8.7.0"
   },
   "peerDependencies": {
-    "stylelint": "^9.10.*"
+    "stylelint": "^9.0.0 || ^10.0.0"
+  },
+  "dependencies": {
+    "stylelint-scss": "^3.6.0"
   }
 }
