@@ -15,7 +15,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/getfylgja/stylelint-config-fylgja.git"
+    "url": "https://github.com/fylgja/stylelint-config.git"
   },
   "engines": {
     "node": ">=6"
