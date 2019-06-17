@@ -70,7 +70,7 @@ For information on what each rule does.
 
 ### Operator
 
-- `operator-no-newline-after`: true
+- `operator-no-newline-after`: null
 - `operator-no-newline-before`: true
 - `operator-no-unspaced`: true
 

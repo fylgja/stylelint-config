@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.2.3 - 17-06-19
+* FIX: Set scss/operator-no-newline-after to null
+  * This rule caused issues with the background shorthand
+    position size separator (`/`).
+    Also in JS and other languages it is common to split long lines after operators.
+
 ## 2.2.2 - 19-05-19
 * IMP: Git URL Changed
 * IMP: doc
