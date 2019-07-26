@@ -1,31 +1,34 @@
 # Changelog
 
-## 2.2.3 - 17-06-19
+## 2.2.3 - (2019-07-26)
+* IMP: changelog date format to ISO standard
+
+## 2.2.3 - (2019-06-17)
 * FIX: Set scss/operator-no-newline-after to null
   * This rule caused issues with the background shorthand
     position size separator (`/`).
     Also in JS and other languages it is common to split long lines after operators.
 
-## 2.2.2 - 19-05-19
+## 2.2.2 - (2019-05-19)
 * IMP: Git URL Changed
 * IMP: doc
 * IMP: pkg dependencies
 
-## 2.2.1 - 05-05-19
+## 2.2.1 - (2019-05-05)
 * IMP: formating
 
-## 2.2.0 - 14-04-19
+## 2.2.0 - (2019-04-14)
 * ADD: title to changelog
 * Set indentation rule to 4
   * Originally wanted this done via the editorconfig instead, but chose to set this.
   As this fixes issue with the VSCode plugin and the cli cmd.
 
-## 2.1.0 - 12-03-19
+## 2.1.0 - (2019-03-12)
 * IMP: make selector-no-qualifying-type less strict by allowing classes
 * DEL: font-weight-notation rule
   * This rule give issues with some style cases and scss functions like nth
 
-## 2.0.0 - 22-02-19
+## 2.0.0 - (2019-02-22)
 * IMP: Order doc
 * ADD: SCSS plugin as dependency
 * IMP: main stylelintconfig rules → _See readme what is include_
@@ -33,24 +36,22 @@
 * IMP: stylelint version in pkg
 * ADD: LESS Rules
 * ADD: Less Doc
-* 12-02-19
-  * ADD: order doc
 
-## 1.0.4 - 06-01-19
+## 1.0.4 - (2019-01-06)
 * FIX: peerDep version
 * DEL: lockfile
 
-## 1.0.3 - 03-01-19
+## 1.0.3 - (2019-01-03)
 * FIX: rule selector-max-type, missing ignore rules
 * IMP: editorconfig indent rule for index.js (stylelint-config)
 
-## 1.0.2 - 30-12-18
+## 1.0.2 - (2018-12-30)
 * IMP: add new rules to editorconfig
 * IMP: gitingnore
 * IMP: 📦 info: add empty scripts
 
-## 1.0.1 - 22-10-18
+## 1.0.1 - (2018-10-22)
 * DOC: improve readme
 
-## 1.0.0 - 21-10-18
-* Initial release
+## 1.0.0 - (2018-10-21)
+* Initial release 🎉
