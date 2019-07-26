@@ -9,35 +9,35 @@ But not used as a dependency in our config.
 
 <details><summary>Table of Contents</summary>
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Extending](#extending)
-- [Extensions](#extensions)
-  - [SCSS](#scss)
-  - [LESS](#less)
-  - [Order](#order)
-- [Rules](#rules)
-  - [At-rule](#at-rule)
-  - [Block](#block)
-  - [Color](#color)
-  - [Comment](#comment)
-  - [Custom Property](#custom-property)
-  - [Declaration](#declaration)
-  - [Font family](#font-family)
-  - [Function](#function)
-  - [General / Sheet](#general--sheet)
-  - [Keyframe/Animation](#keyframeanimation)
-  - [Media feature](#media-feature)
-  - [Media query List](#media-query-list)
-  - [Number](#number)
-  - [Property](#property)
-  - [Rule](#rule)
-  - [Selector](#selector)
-  - [Shorthand property](#shorthand-property)
-  - [String](#string)
-  - [Unit](#unit)
-  - [Value](#value)
-- [License](#license)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Extending](#Extending)
+- [Extensions](#Extensions)
+  - [SCSS](#SCSS)
+  - [LESS](#LESS)
+  - [Order](#Order)
+- [Rules](#Rules)
+  - [At-rule](#At-rule)
+  - [Block](#Block)
+  - [Color](#Color)
+  - [Comment](#Comment)
+  - [Custom Property](#Custom-Property)
+  - [Declaration](#Declaration)
+  - [Font family](#Font-family)
+  - [Function](#Function)
+  - [General / Sheet](#General--Sheet)
+  - [Keyframe/Animation](#KeyframeAnimation)
+  - [Media feature](#Media-feature)
+  - [Media query List](#Media-query-List)
+  - [Number](#Number)
+  - [Property](#Property)
+  - [Rule](#Rule)
+  - [Selector](#Selector)
+  - [Shorthand property](#Shorthand-property)
+  - [String](#String)
+  - [Unit](#Unit)
+  - [Value](#Value)
+- [License](#License)
 
 </details>
 
@@ -135,8 +135,8 @@ _These are better for project specific rules (if needed)._
 ### At-rule
 
 - `at-rule-empty-line-before`: always
-  - except: inside-block, blockless-after-same-name-blockless
-  - ignore: after-comment, first-nested
+  - except: blockless-after-same-name-blockless, first-nested
+  - ignore: after-comment, inside-block
   - ignoreAtRules: import, if, else
 - `at-rule-name-case`: lower
 - `at-rule-name-space-after`: always-single-line,
