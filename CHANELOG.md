@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.2.3 - (2019-07-26)
+## 2.2.4 - (2019-07-26)
 * IMP: changelog date format to ISO standard
 * IMP: make at-rule-empty-line-before less strict, via swap
   * "inside-block" should be ignored
