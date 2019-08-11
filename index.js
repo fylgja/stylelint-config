@@ -176,7 +176,7 @@ module.exports = {
     "string-quotes": "double",
     "unit-case": "lower",
     "unit-no-unknown": true,
-    "value-keyword-case": "lower",
+    "value-keyword-case": ["lower", { ignoreProperties: ["/family/"] }],
     "value-list-comma-newline-after": "always-multi-line",
     "value-list-comma-newline-before": "never-multi-line",
     "value-list-comma-space-after": "always-single-line",

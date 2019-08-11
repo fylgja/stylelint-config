@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.2.5 - (2019-08-11)
+* FIX: issue with variables and font family stacks
+
 ## 2.2.4 - (2019-07-26)
 * IMP: changelog date format to ISO standard
 * IMP: make at-rule-empty-line-before less strict, via swap
