@@ -20,7 +20,10 @@ module.exports = {
     "scss/dollar-variable-colon-space-before": "never",
     "scss/dollar-variable-no-missing-interpolation": true,
     "scss/double-slash-comment-whitespace-inside": "always",
-    "scss/media-feature-value-dollar-variable": "always",
+    "scss/media-feature-value-dollar-variable": [
+      "always",
+      { severity: "warning" }
+    ],
     "scss/operator-no-newline-after": null,
     "scss/operator-no-newline-before": true,
     "scss/operator-no-unspaced": true,

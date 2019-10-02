@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.2.7 - (2019-10-02)
+* IMP: lower rule strength of scss @media use vars
+  to work easier with native css
+
 ## 2.2.6 - (2019-08-31)
 * IMP: version of dependencies
 

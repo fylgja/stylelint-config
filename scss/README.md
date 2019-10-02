@@ -67,6 +67,7 @@ For information on what each rule does.
 ### Media feature
 
 - `media-feature-value-dollar-variable`: true
+  - severity: warning
 
 ### Operator
 
