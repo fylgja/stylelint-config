@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.2.8 - (2019-10-02)
+* IMP: set scss/operator-no-unspaced to null to support the new sass modules.
+* ADD: scss ignoreAtRules for `@use` and `@forward` to support the new sass modules
+
 ## 2.2.7 - (2019-10-02)
 * IMP: lower rule strength of scss @media use vars
   to work easier with native css

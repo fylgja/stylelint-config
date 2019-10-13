@@ -14,7 +14,7 @@ module.exports = {
     "scss/at-mixin-argumentless-call-parentheses": "never",
     "scss/at-mixin-parentheses-space-before": "never",
     "at-rule-no-unknown": null,
-    "scss/at-rule-no-unknown": true,
+    "scss/at-rule-no-unknown": [true, { ignoreAtRules: ["use", "forward"] }],
     "scss/dollar-variable-colon-newline-after": null,
     "scss/dollar-variable-colon-space-after": "always-single-line",
     "scss/dollar-variable-colon-space-before": "never",
@@ -26,7 +26,7 @@ module.exports = {
     ],
     "scss/operator-no-newline-after": null,
     "scss/operator-no-newline-before": true,
-    "scss/operator-no-unspaced": true,
+    "scss/operator-no-unspaced": null,
     "scss/selector-no-redundant-nesting-selector": true
   }
 };
