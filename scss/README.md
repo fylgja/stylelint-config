@@ -73,7 +73,7 @@ For information on what each rule does.
 
 - `operator-no-newline-after`: null
 - `operator-no-newline-before`: true
-- `operator-no-unspaced`: true
+- `operator-no-unspaced`: null
 
 ### Selector
 
