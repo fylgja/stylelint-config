@@ -10,16 +10,24 @@ module.exports = {
     "scss/at-function-parentheses-space-before": "never",
     "scss/at-if-closing-brace-newline-after": "always-last-in-chain",
     "scss/at-if-closing-brace-space-after": "always-intermediate",
+    "scss/at-if-no-null": true,
     "scss/at-import-no-partial-leading-underscore": true,
     "scss/at-mixin-argumentless-call-parentheses": "never",
     "scss/at-mixin-parentheses-space-before": "never",
     "at-rule-no-unknown": null,
-    "scss/at-rule-no-unknown": [true, { ignoreAtRules: ["use", "forward"] }],
+    "scss/at-rule-no-unknown": true,
     "scss/dollar-variable-colon-newline-after": null,
     "scss/dollar-variable-colon-space-after": "always-single-line",
     "scss/dollar-variable-colon-space-before": "never",
     "scss/dollar-variable-no-missing-interpolation": true,
     "scss/double-slash-comment-whitespace-inside": "always",
+    "scss/function-color-relative": [
+      true,
+      {
+        severity: "warning",
+        message: "Use the new scss color functions instead!"
+      }
+    ],
     "scss/media-feature-value-dollar-variable": [
       "always",
       { severity: "warning" }

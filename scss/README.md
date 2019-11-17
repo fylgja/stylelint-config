@@ -37,6 +37,7 @@ For information on what each rule does.
 
 - `at-if-closing-brace-newline-after`: always-last-in-chain
 - `at-if-closing-brace-space-after`: always-intermediate
+- `at-if-no-null`: true
 
 ### @import
 
@@ -59,6 +60,12 @@ For information on what each rule does.
 - `dollar-variable-colon-space-after`: always-single-line
 - `dollar-variable-colon-space-before`: never
 - `dollar-variable-no-missing-interpolation`: true
+
+### Function
+
+- `function-color-relative`: true
+  - severity: warning
+  - _Use the new scss color functions instead!_
 
 ### Comments
 
