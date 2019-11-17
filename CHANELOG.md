@@ -1,5 +1,15 @@
 # Changelog
 
+## 3.0.0 - (2019-11-17)
+* DEL:
+  * scss ignoreAtRules, fixed in [stylelint-scss v3.12](https://github.com/kristerkari/stylelint-scss/releases/tag/3.12.0)
+  * rules that are the same as stylelint-config-standard
+* IMP:
+  * update styleint-scss to v3.12
+  * cleanup LESS rules
+  * rules for better compatibility with other stylelint-configs and prettier
+* ADD: stylelint-config-standard as dependencies to simplify our own rules
+
 ## 2.2.8 - (2019-10-02)
 * IMP: set scss/operator-no-unspaced to null to support the new sass modules.
 * ADD: scss ignoreAtRules for `@use` and `@forward` to support the new sass modules
