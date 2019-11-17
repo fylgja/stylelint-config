@@ -125,7 +125,7 @@ For information on what each rule does.
 [Checkout the original DOC](https://stylelint.io/user-guide/rules/)
 or the rules folder on [Stylelint Github Page](https://github.com/stylelint/stylelint/tree/master/lib/rules).
 
-Since we extend on the [stylelint-config-recommended](https://github.com/stylelint/stylelint-config-standard). Yiu should checkout the rules set there.
+Since we extend on the [stylelint-config-recommended](https://github.com/stylelint/stylelint-config-standard). You should also checkout the rules set there.
 
 Down here are only the rules we have set.
 
@@ -180,8 +180,6 @@ _These are better for project specific rules (if needed)._
 
 - `font-family-name-quotes`: always-where-recommended
   - severity: warning
-- `font-family-no-duplicate-names`: true,
-  - severity: warning
 - `font-family-no-missing-generic-family-keyword`: true
   - severity: warning
 
@@ -220,7 +218,7 @@ _These are better for project specific rules (if needed)._
 > Notes about `number-leading-zero`.
 > Just as Bootstrap & Google we support no leading zero's.
 > But since pretty much all compilers and prettier use leading zero's.
-> We have kept the rule set to the default set by stylelint.
+> We have kept the rule set to the default value, set by stylelint.
 
 ### Property
 
@@ -232,9 +230,6 @@ _These are better for project specific rules (if needed)._
 - `rule-empty-line-before`: always-multi-line
   - except: first-nested,
   - ignore: after-comment, inside-block
-    - _inside-block is not for everyone._
-    _We like our css components compact._
-    _Some like line-breaks between classes modifiers instead._
 
 ### Selector
 
@@ -247,8 +242,6 @@ _These are better for project specific rules (if needed)._
 - `selector-max-compound-selectors`: 4
 - `selector-max-empty-lines`: 0,
 - `selector-max-id`: 0
-- `selector-max-specificity`: null,
-  - _Might cause issues with some css langages so we enforce it with other selector-max rules_
 - `selector-max-type`: 2
 - `selector-max-universal`: 1
 - `selector-no-qualifying-type`: true

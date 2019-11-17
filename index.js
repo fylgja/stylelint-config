@@ -89,7 +89,6 @@ module.exports = {
     "selector-max-class": 4,
     "selector-max-compound-selectors": 4,
     "selector-max-id": 0,
-    "selector-max-specificity": null,
     "selector-max-type": 2,
     "selector-max-universal": 1,
     "selector-no-qualifying-type": [true, { ignore: ["attribute", "class"] }],
