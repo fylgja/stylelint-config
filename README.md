@@ -4,8 +4,7 @@
 
 A sharable stylelint config object that enforces Fylgja's css rules.
 
-Based on the [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard)
-But not used as a dependency in our config.
+Extends [stylelint-config-recommended](https://github.com/stylelint/stylelint-config-standard).
 
 <details><summary>Table of Contents</summary>
 
@@ -26,16 +25,13 @@ But not used as a dependency in our config.
   - [Font family](#font-family)
   - [Function](#function)
   - [General / Sheet](#general--sheet)
-  - [Keyframe/Animation](#keyframeanimation)
-  - [Media feature](#media-feature)
-  - [Media query List](#media-query-list)
+  - [Media](#media)
   - [Number](#number)
   - [Property](#property)
   - [Rule](#rule)
   - [Selector](#selector)
   - [Shorthand property](#shorthand-property)
   - [String](#string)
-  - [Unit](#unit)
   - [Value](#value)
 - [License](#license)
 
@@ -129,6 +125,10 @@ For information on what each rule does.
 [Checkout the original DOC](https://stylelint.io/user-guide/rules/)
 or the rules folder on [Stylelint Github Page](https://github.com/stylelint/stylelint/tree/master/lib/rules).
 
+Since we extend on the [stylelint-config-recommended](https://github.com/stylelint/stylelint-config-standard). Yiu should checkout the rules set there.
+
+Down here are only the rules we have set.
+
 _We have not set any [white/black]-list values._
 _These are better for project specific rules (if needed)._
 
@@ -138,38 +138,24 @@ _These are better for project specific rules (if needed)._
   - except: blockless-after-same-name-blockless, first-nested
   - ignore: after-comment, inside-block
   - ignoreAtRules: import, if, else
-- `at-rule-name-case`: lower
-- `at-rule-name-space-after`: always-single-line,
 - `at-rule-no-unknown`: true
   - ignoreAtRules: for, each, if, else, mixin, mixin-*, include
     - _Includes support for PostCSS plugins_
 - `at-rule-no-vendor-prefix`: true
-- `at-rule-semicolon-newline-after`: always
 - `at-rule-semicolon-space-before`: never
+  - _If there was a option for never, it would be never_
 
 ### Block
 
-- `block-closing-brace-empty-line-before`: never
 - `block-closing-brace-newline-after`: always-multi-line
   - ignoreAtRules: if, else
 - `block-closing-brace-newline-before`: always-multi-line
-- `block-closing-brace-space-after`: always-single-line
-- `block-closing-brace-space-before`: always-single-line
-- `block-no-empty`: true
-- `block-opening-brace-newline-after`: always-multi-line
-- `block-opening-brace-newline-before`: null
-  - _If there was a option for never, it would be never_
-- `block-opening-brace-space-after`: always-single-line
-- `block-opening-brace-space-before`: always
 
 ### Color
 
 - `color-hex-case`: lower
   - _Lowercase letters are easier to distinguish from numbers_
 - `color-hex-length`: short
-- `color-no-hex`: null
-  - _This is set to null._
-    _But only because this is something that should never be blocked_
 - `color-no-invalid-hex`: true
 
 ### Comment
@@ -177,8 +163,6 @@ _These are better for project specific rules (if needed)._
 - `comment-empty-line-before`: always
   - except: first-nested
   - ignore: after-comment, stylelint-commands
-- `comment-no-empty`: true
-- `comment-whitespace-inside`: always
 
 ### Custom Property
 
@@ -186,20 +170,9 @@ _These are better for project specific rules (if needed)._
 
 ### Declaration
 
-- `declaration-bang-space-after`: never
-- `declaration-bang-space-before`: always
-- `declaration-block-no-duplicate-properties`: true
-  - ignore: consecutive-duplicates-with-different-values
 - `declaration-block-no-redundant-longhand-properties`: true
-- `declaration-block-no-shorthand-property-overrides`: true
-- `declaration-block-semicolon-newline-after`: always-multi-line
 - `declaration-block-semicolon-newline-before`: never-multi-line
-- `declaration-block-semicolon-space-after`: always-single-line
-- `declaration-block-semicolon-space-before`: never
-- `declaration-block-trailing-semicolon`: always
-- `declaration-colon-newline-after`: always-multi-line
-- `declaration-colon-space-after`: always-single-line
-- `declaration-colon-space-before`: never
+  - _Would be never if this was an option_
 - `declaration-empty-line-before`: never
 - `declaration-no-important`: true
 
@@ -214,23 +187,14 @@ _These are better for project specific rules (if needed)._
 
 ### Function
 
-- `function-calc-no-unspaced-operator`: true
-- `function-comma-newline-after` always-multi-line
-- `function-comma-space-after`: always-single-line
-- `function-comma-space-before`: never
-- `function-linear-gradient-no-nonstandard-direction`: true
-- `function-max-empty-lines`: 0
 - `function-name-case`: lower
   - ignoreFunctions: _Starting with: get, (e.g getColor)_
-- `function-parentheses-newline-inside`: always-multi-line
-- `function-parentheses-space-inside`: never-single-line
+- `function-url-no-scheme-relative`: true
 - `function-url-quotes`: always
-- `function-whitespace-after`: "always
 
 ### General / Sheet
 
 - `indentation`: 4
-- `max-empty-lines`: 1
 - `max-line-length`: 80
   - ignorePattern: URI's
   - severity: warning
@@ -239,48 +203,27 @@ _These are better for project specific rules (if needed)._
   _The css dept is enforced via `selector-max`._
 - `no-descending-specificity`: true
   - severity: warning
-- `no-duplicate-at-import-rules`: true
-- `no-duplicate-selectors`: true
 - `no-empty-first-line`: true
-- `no-empty-source`: true
-- `no-eol-whitespace`: true
-- `no-extra-semicolons`: true
-- `no-invalid-double-slash-comments`: true
-- `no-missing-end-of-source-newline`: true
 
-### Keyframe/Animation
+### Media
 
-- `keyframe-declaration-no-important`: true
-
-### Media feature
-
-- `media-feature-colon-space-after`: always
-- `media-feature-colon-space-before`: never
-- `media-feature-name-case`: lower
 - `media-feature-name-no-unknown`: true
   - severity: warning
 - `media-feature-name-no-vendor-prefix`: true
-- `media-feature-parentheses-space-inside`: true
-- `media-feature-range-operator-space-after`: always
-- `media-feature-range-operator-space-before` always
-
-### Media query List
-
-- `media-query-list-comma-newline-after`: always-multi-line
 - `media-query-list-comma-newline-before`: never-multi-line
-- `media-query-list-comma-space-after`: always-multi-line
-- `media-query-list-comma-space-before`: never
+  - _Would be never if this was an option_
 
 ### Number
 
-- `number-leading-zero`: never
 - `number-max-precision`: 5
-- `number-no-trailing-zeros`: true
+
+> Notes about `number-leading-zero`.
+> Just as Bootstrap & Google we support no leading zero's.
+> But since pretty much all compilers and prettier use leading zero's.
+> We have kept the rule set to the default set by stylelint.
 
 ### Property
 
-- `property-case`: lower
-- `property-no-unknown`: true
 - `property-no-vendor-prefix`: true
   - ignoreProperties: appearance
 
@@ -295,34 +238,24 @@ _These are better for project specific rules (if needed)._
 
 ### Selector
 
-- `selector-attribute-brackets-space-inside`: never
-- `selector-attribute-operator-space-after`: never
-- `selector-attribute-operator-space-before`: never
 - `selector-attribute-quotes`: always
-- `selector-combinator-space-after`: always
-- `selector-combinator-space-before`: always
-- `selector-descendant-combinator-no-non-space`: true
-- `selector-list-comma-newline-after`: always
 - `selector-list-comma-newline-before`: never-multi-line
+  - _Would be never if this was an option_
 - `selector-list-comma-space-after`: always-single-line
-- `selector-list-comma-space-before`: never
 - `selector-max-attribute`: 2
 - `selector-max-class`: 4
 - `selector-max-compound-selectors`: 4
 - `selector-max-empty-lines`: 0,
 - `selector-max-id`: 0
-- `selector-max-specificity`: 0, 4, 2,
+- `selector-max-specificity`: null,
+  - _Might cause issues with some css langages so we enforce it with other selector-max rules_
 - `selector-max-type`: 2
 - `selector-max-universal`: 1
 - `selector-no-qualifying-type`: true
   - ignore: attribute, class
 - `selector-no-vendor-prefix`: true
-- `selector-pseudo-class-case`: lower
-- `selector-pseudo-class-no-unknown`: true
-- `selector-pseudo-class-parentheses-space-inside`: never
-- `selector-pseudo-element-case`: lower
-- `selector-pseudo-element-colon-notation`: double
-- `selector-pseudo-element-no-unknown`: true
+- `selector-type-no-unknown`: true
+  - severity: warning
 
 ### Shorthand property
 
@@ -330,24 +263,14 @@ _These are better for project specific rules (if needed)._
 
 ### String
 
-- `string-no-newline`: true
 - `string-quotes`: double
-
-### Unit
-
-- `length-zero-no-unit`: true
-- `unit-case`: lower
-- `unit-no-unknown`: true
 
 ### Value
 
 - `value-keyword-case`: lower
   - ignoreProperties: with the name `family`
-- `value-list-comma-newline-after`: always-multi-line
+  - _Font families may have uppercase letters_
 - `value-list-comma-newline-before`: never-multi-line
-- `value-list-comma-space-after`: always-single-line
-- `value-list-comma-space-before`: never
-- `value-list-max-empty-lines`: 0
 - `value-no-vendor-prefix`: true
   - ignoreValues: tap-highlight-color
 
