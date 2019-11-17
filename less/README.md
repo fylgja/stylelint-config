@@ -2,10 +2,13 @@
 
 There no specific rules set for LESS.
 And we don't really work with LESS anymore.
-If there are still rules that conflict with your LESS code please share what.
+
+If there are still rules that conflict with your LESS code.
+Than please share with us what.
+So we can add this to our rules.
 
 That said there are some rules set here,
-that unset some rules that conflict with the less code.
+that unset some rules that conflict with the LESS code.
 
 ## Usage
 
@@ -24,6 +27,7 @@ But now add less to the end to also load these rules.
 
 - `at-rule-no-unknown`: true
   - ignoreAtRules: plugin
+  - severity: warning
 
 ### Media feature
 
@@ -41,5 +45,3 @@ But now add less to the end to also load these rules.
   - _Give a little more space to use LESS mixin's_
 - `selector-max-id`: 1
   - _Allows the use of LESS Maps_
-- `selector-max-specificity` null
-  - _To much LESS selectors that look like CSS causing errors._
