@@ -43,6 +43,7 @@ module.exports = {
       }
     ],
     "custom-property-empty-line-before": "never",
+    "declaration-colon-newline-after": null,
     "declaration-block-no-redundant-longhand-properties": true,
     "declaration-block-semicolon-newline-before": "never-multi-line",
     "declaration-empty-line-before": "never",

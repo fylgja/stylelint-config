@@ -170,6 +170,9 @@ _These are better for project specific rules (if needed)._
 
 ### Declaration
 
+- `declaration-colon-newline-after`: null
+  - _Works better with Prettier and does not always makes sense anyway._
+    _So giving freedom to the dev._
 - `declaration-block-no-redundant-longhand-properties`: true
 - `declaration-block-semicolon-newline-before`: never-multi-line
   - _Would be never if this was an option_

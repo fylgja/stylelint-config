@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.0.1 - (2019-12-10)
+* IMP: Unset `declaration-colon-newline-after`, works better with Prettier
+  and does not always makes sense anyway. So giving freedom to the dev.
+
 ## 3.0.0 - (2019-11-17)
 * DEL:
   * scss ignoreAtRules, fixed in [stylelint-scss v3.12](https://github.com/kristerkari/stylelint-scss/releases/tag/3.12.0)

@@ -2,7 +2,7 @@
   "name": "@fylgja/stylelint-config",
   "version": "3.0.0",
   "description": "Sharable stylelint config used by Fylgja packages",
-  "homepage": "http://getfylgja.com/",
+  "homepage": "https://getfylgja.com/",
   "author": "Fylgja",
   "license": "MIT",
   "keywords": [
@@ -15,7 +15,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fylgja/stylelint-config.git"
+    "url": "https://github.com/fylgja/stylelint-config"
   },
   "bugs": {
     "url": "https://github.com/fylgja/stylelint-config/issues"
