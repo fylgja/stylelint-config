@@ -47,8 +47,8 @@ So what is this DOM like order.
     clear: both;
     float: left;
     // Layout
-    display: block;
     list-style: square;
+    display: block;
     grid-column: span 2;
     flex-flow: row wrap;
     justify-content: center;
@@ -92,7 +92,7 @@ So what is this DOM like order.
     hyphens: auto;
     word-break: break-word;
     overflow-wrap: break-word;
-    // Animatiable
+    // Animatable
     transform: scaleX(1);
     opacity: 1;
     animation: 3s infinite;
@@ -152,10 +152,10 @@ Also width comes before height.
 
 <details><summary>Why is the var's/special setters group before the box group?</summary>
 
-The properties in this group are specificly used to set values.
+The properties in this group are specifically used to set values.
 
-CSS var should always come before all, similair to SCSS var's.
-And the other propeties are used to set values used by the content property.
+CSS var should always come before all, similar to SCSS var's.
+And the other properties are used to set values used by the content property.
 
 </details>
 
@@ -175,7 +175,7 @@ Then _Yes_ that property should come at the end.
 
 <details><summary>Why is float part of the box group</summary>
 
-Float moves the box like position while flex and grid move the childeren.
+Float moves the box like position while flex and grid move the children.
 
 </details>
 
@@ -185,9 +185,9 @@ Not really sure.
 Still working out the best position for it.
 For now where using the default order used by Chrome and Firefox.
 
-Another reason is that the `display` propery can have the value `list-item`.
+Another reason is that the `display` property can have the value `list-item`.
 
-_Suggetions are welcome_
+_Suggestions are welcome_
 
 </details>
 
@@ -207,7 +207,7 @@ For CSS this also applies to inline variables.
 ```CSS
 .icon {
     --size: 15px;
-    width: var(--var);
-    height: var(--var);
+    width: var(--size);
+    height: var(--size);
 }
 ```
