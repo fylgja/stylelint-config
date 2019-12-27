@@ -75,7 +75,16 @@ module.exports = {
     "no-descending-specificity": [true, { severity: "warning" }],
     "no-empty-first-line": true,
     "number-max-precision": 5,
-    "property-no-vendor-prefix": [true, { ignoreProperties: ["appearance"] }],
+    "property-no-vendor-prefix": [
+      true,
+      {
+        ignoreProperties: [
+          "appearance",
+          "text-size-adjust",
+          "tap-highlight-color"
+        ]
+      }
+    ],
     "rule-empty-line-before": [
       "always-multi-line",
       {

@@ -9,8 +9,8 @@
     "fylgja",
     "stylelint",
     "stylelint-config",
-    "lint",
-    "css"
+    "css linting",
+    "scss linting"
   ],
   "main": "index.js",
   "repository": {

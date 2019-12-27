@@ -1,5 +1,8 @@
 # Changelog
 
+## 3.0.2 - (2019-12-27)
+* IMP: add more ignore rules to property-no-vendor-prefix.
+
 ## 3.0.1 - (2019-12-10)
 * IMP: Unset `declaration-colon-newline-after`, works better with Prettier
   and does not always makes sense anyway. So giving freedom to the dev.
