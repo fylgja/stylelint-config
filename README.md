@@ -226,7 +226,7 @@ _These are better for project specific rules (if needed)._
 ### Property
 
 - `property-no-vendor-prefix`: true
-  - ignoreProperties: appearance
+  - ignoreProperties: appearance, text-size-adjust, tap-highlight-color
 
 ### Rule
 
