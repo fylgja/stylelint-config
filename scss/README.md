@@ -69,6 +69,8 @@ For information on what each rule does.
 
 ### Comments
 
+- `comment-no-empty`: always
+  - severity: warning
 - `double-slash-comment-whitespace-inside`: always
 
 ### Media feature

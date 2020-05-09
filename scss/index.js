@@ -16,6 +16,12 @@ module.exports = {
     "scss/at-mixin-parentheses-space-before": "never",
     "at-rule-no-unknown": null,
     "scss/at-rule-no-unknown": true,
+    "scss/comment-no-empty": [
+      true,
+      {
+        severity: "warning",
+      },
+    ],
     "scss/dollar-variable-colon-newline-after": null,
     "scss/dollar-variable-colon-space-after": "always-single-line",
     "scss/dollar-variable-colon-space-before": "never",
