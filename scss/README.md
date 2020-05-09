@@ -59,6 +59,8 @@ For information on what each rule does.
   - _should be always-multi-line but it has a bug with maps_
 - `dollar-variable-colon-space-after`: always-single-line
 - `dollar-variable-colon-space-before`: never
+- `dollar-variable-first-in-block`: true
+  - ignore: comments, imports
 - `dollar-variable-no-missing-interpolation`: true
 
 ### Function

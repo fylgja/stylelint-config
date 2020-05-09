@@ -25,22 +25,28 @@ module.exports = {
     "scss/dollar-variable-colon-newline-after": null,
     "scss/dollar-variable-colon-space-after": "always-single-line",
     "scss/dollar-variable-colon-space-before": "never",
+    "scss/dollar-variable-first-in-block": [
+      true,
+      {
+        ignore: ["comments", "imports"],
+      },
+    ],
     "scss/dollar-variable-no-missing-interpolation": true,
     "scss/double-slash-comment-whitespace-inside": "always",
     "scss/function-color-relative": [
       true,
       {
         severity: "warning",
-        message: "Use the new scss color functions instead!"
-      }
+        message: "Use the new scss color functions instead!",
+      },
     ],
     "scss/media-feature-value-dollar-variable": [
       "always",
-      { severity: "warning" }
+      { severity: "warning" },
     ],
     "scss/operator-no-newline-after": null,
     "scss/operator-no-newline-before": true,
     "scss/operator-no-unspaced": null,
-    "scss/selector-no-redundant-nesting-selector": true
-  }
+    "scss/selector-no-redundant-nesting-selector": true,
+  },
 };
