@@ -16,20 +16,13 @@ module.exports = {
     "scss/at-mixin-parentheses-space-before": "never",
     "at-rule-no-unknown": null,
     "scss/at-rule-no-unknown": true,
-    "scss/comment-no-empty": [
-      true,
-      {
-        severity: "warning",
-      },
-    ],
+    "scss/comment-no-empty": [true, { severity: "warning" }],
     "scss/dollar-variable-colon-newline-after": null,
     "scss/dollar-variable-colon-space-after": "always-single-line",
     "scss/dollar-variable-colon-space-before": "never",
     "scss/dollar-variable-first-in-block": [
       true,
-      {
-        ignore: ["comments", "imports"],
-      },
+      { ignore: ["comments", "imports"] },
     ],
     "scss/dollar-variable-no-missing-interpolation": true,
     "scss/double-slash-comment-whitespace-inside": "always",

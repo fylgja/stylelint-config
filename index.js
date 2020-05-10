@@ -6,8 +6,8 @@ module.exports = {
       {
         except: ["blockless-after-same-name-blockless", "first-nested"],
         ignore: ["after-comment", "inside-block"],
-        ignoreAtRules: ["import", "if", "else"]
-      }
+        ignoreAtRules: ["import", "if", "else"],
+      },
     ],
     "at-rule-no-unknown": [
       true,
@@ -19,28 +19,28 @@ module.exports = {
           "else",
           "mixin",
           "/^mixin-/",
-          "include"
-        ]
-      }
+          "include",
+        ],
+      },
     ],
     "at-rule-no-vendor-prefix": true,
     "at-rule-semicolon-space-before": "never",
     "block-closing-brace-newline-after": [
       "always-multi-line",
-      { ignoreAtRules: ["if", "else"] }
+      { ignoreAtRules: ["if", "else"] },
     ],
     "block-closing-brace-newline-before": "always-multi-line",
     "color-hex-case": [
       "lower",
-      { message: "Lowercase letters are easier to distinguish from numbers" }
+      { message: "Lowercase letters are easier to distinguish from numbers" },
     ],
     "color-hex-length": "short",
     "comment-empty-line-before": [
       "always",
       {
         except: ["first-nested"],
-        ignore: ["after-comment", "stylelint-commands"]
-      }
+        ignore: ["after-comment", "stylelint-commands"],
+      },
     ],
     "custom-property-empty-line-before": "never",
     "declaration-colon-newline-after": null,
@@ -50,12 +50,12 @@ module.exports = {
     "declaration-no-important": true,
     "font-family-name-quotes": [
       "always-where-recommended",
-      { severity: "warning" }
+      { severity: "warning" },
     ],
     "font-family-no-duplicate-names": [true, { severity: "warning" }],
     "font-family-no-missing-generic-family-keyword": [
       true,
-      { severity: "warning" }
+      { severity: "warning" },
     ],
     "function-name-case": ["lower", { ignoreFunctions: ["/^get.*$/"] }],
     "function-url-no-scheme-relative": true,
@@ -65,8 +65,8 @@ module.exports = {
       80,
       {
         ignorePattern: ["/https?://[0-9,a-z]*.*/"],
-        severity: "warning"
-      }
+        severity: "warning",
+      },
     ],
     "max-nesting-depth": 5,
     "media-feature-name-no-unknown": [true, { severity: "warning" }],
@@ -81,16 +81,16 @@ module.exports = {
         ignoreProperties: [
           "appearance",
           "text-size-adjust",
-          "tap-highlight-color"
-        ]
-      }
+          "tap-highlight-color",
+        ],
+      },
     ],
     "rule-empty-line-before": [
       "always-multi-line",
       {
         except: ["first-nested"],
-        ignore: ["after-comment", "inside-block"]
-      }
+        ignore: ["after-comment", "inside-block"],
+      },
     ],
     "selector-attribute-quotes": "always",
     "selector-list-comma-newline-before": "never-multi-line",
@@ -108,6 +108,6 @@ module.exports = {
     "string-quotes": "double",
     "value-keyword-case": ["lower", { ignoreProperties: ["/family/"] }],
     "value-list-comma-newline-before": "never-multi-line",
-    "value-no-vendor-prefix": [true, { ignoreValues: ["tap-highlight-color"] }]
-  }
+    "value-no-vendor-prefix": [true, { ignoreValues: ["tap-highlight-color"] }],
+  },
 };
