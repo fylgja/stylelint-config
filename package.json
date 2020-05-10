@@ -20,6 +20,9 @@
   "bugs": {
     "url": "https://github.com/fylgja/stylelint-config/issues"
   },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
+  },
   "peerDependencies": {
     "stylelint": "^10.1.0 || ^11.0.0 || ^12.0.0 || ^13.0.0"
   },
