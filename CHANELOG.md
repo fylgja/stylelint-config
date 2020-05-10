@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.1.0 - (2019-12-27)
+* UP: stylelint dependencies
+* ADD:
+  * rule comment-no-empty
+  * rule dollar-variable-first-in-block
+
 ## 3.0.2 - (2019-12-27)
 * IMP: add more ignore rules to property-no-vendor-prefix.
 
