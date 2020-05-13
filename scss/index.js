@@ -33,7 +33,7 @@ module.exports = {
       "always",
       {
         severity: "warning",
-        ignore: ["none", "coarse", "fine", "hover", "light", "dark", "reduce"],
+        ignore: ["keywords"],
       },
     ],
     "scss/operator-no-newline-after": null,
