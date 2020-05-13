@@ -1,6 +1,9 @@
 # Changelog
 
-## 3.1.0 - (2019-12-27)
+## 3.1.2 - (2020-05-13)
+* DEL: rule dollar-variable-first-in-block
+
+## 3.1.0 - (2020-05-10)
 * UP: stylelint dependencies
 * ADD:
   * rule comment-no-empty
