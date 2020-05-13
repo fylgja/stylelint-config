@@ -1,7 +1,8 @@
 # Changelog
 
-## 3.1.2 - (2020-05-13)
+## 3.2.0 - (2020-05-13)
 * DEL: rule dollar-variable-first-in-block
+* ADD: ignore for mq's with specific values
 
 ## 3.1.0 - (2020-05-10)
 * UP: stylelint dependencies

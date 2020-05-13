@@ -31,7 +31,10 @@ module.exports = {
     ],
     "scss/media-feature-value-dollar-variable": [
       "always",
-      { severity: "warning" },
+      {
+        severity: "warning",
+        ignore: ["none", "coarse", "fine", "hover", "light", "dark", "reduce"],
+      },
     ],
     "scss/operator-no-newline-after": null,
     "scss/operator-no-newline-before": true,
