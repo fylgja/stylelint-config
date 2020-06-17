@@ -25,9 +25,17 @@ There are some rules out there.
 We follow a DOM Like order.
 Others follow the Alphabetical order or something else 🤷‍.
 
-So what is this DOM like order.
+So the DOM order is;
 
-<details><summary>Well, in here is big lump of code that gives you a general idea.</summary>
+* Var's/special setters
+* Positioning
+* Layout
+* Shape
+* Visual
+* Typographic
+* Misc
+
+<details><summary>Or view this code sample or the list mentioned above.</summary>
 
 ```SCSS
 .order-example {
@@ -37,24 +45,18 @@ So what is this DOM like order.
     counter-reset: section;
     counter-increment: section;
     quotes: '"' '"' "'" "'";
-    // Box
+    // Positioning
     box-sizing: border-box;
     position: absolute;
-    top: 0;
     right: 0;
-    bottom: 0;
-    left: 0;
-    clear: both;
-    float: left;
     // Layout
-    list-style: square;
-    display: block;
+    display: block;;
+    float: left;
     grid-column: span 2;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     table-layout: fixed;
-    caption-side: bottom;
     // Shape
     width: auto;
     max-width: 100%;
@@ -64,47 +66,32 @@ So what is this DOM like order.
     shape-outside: img();
     margin: auto;
     padding: 0;
-    border-collapse: collapse;
     border-radius: 50%;
     border: 1px solid currentColor;
     box-shadow: 0 0 0 #fff2;
     outline: none;
-    // Color
+    // Visual
     background-color: #eee;
     color: #333;
     fill: currentColor; // svg
     stroke: currentColor; // svg
-    text-stroke: 4px #eee;
-    caret-color: #333;
-    // Font
+    // Typographic
     font-family: system-ui, sans-serif;
     font-size: 1em;
-    line-height: 1.5;
     font-weight: 500;
-    font-style: normal;
-    font-feature-settings: normal;
-    // Text/Word
-    letter-spacing: unset;
     text-align: center;
-    vertical-align: center;
-    text-transform: uppercase;
+    vertical-align: middle;
     white-space: pre;
     hyphens: auto;
-    word-break: break-word;
     overflow-wrap: break-word;
-    // Animatable
+    // Misc
     transform: scaleX(1);
     opacity: 1;
     animation: 3s infinite;
     transition: transform .2s linear;
-    will-change: transform;
-    // Special properties
     appearance: none;
     overflow: visible;
-    user-select: none;
-    touch-action: manipulation;
     cursor: pointer;
-    scroll-snap-type: x mandatory;
     -webkit-tap-highlight-color: transparent;
 }
 ```
