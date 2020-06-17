@@ -35,7 +35,7 @@ So the DOM order is;
 * Typographic
 * Misc
 
-<details><summary>Or view this code sample or the list mentioned above.</summary>
+<details><summary>Or view this code sample of the list mentioned above.</summary>
 
 ```SCSS
 .order-example {
