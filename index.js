@@ -108,6 +108,7 @@ module.exports = {
     "string-quotes": "double",
     "value-keyword-case": ["lower", { ignoreProperties: ["/family/"] }],
     "value-list-comma-newline-before": "never-multi-line",
+    "value-list-comma-newline-after": null,
     "value-no-vendor-prefix": [true, { ignoreValues: ["tap-highlight-color"] }],
   },
 };
