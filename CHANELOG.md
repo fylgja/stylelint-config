@@ -1,5 +1,8 @@
 # Changelog
 
+## 3.2.1 - (2020-05-13)
+* FIX: opening-brace multiline if else in scss
+
 ## 3.2.0 - (2020-05-13)
 * DEL: rule dollar-variable-first-in-block
 * ADD: ignore for mq's with specific values
