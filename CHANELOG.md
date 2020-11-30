@@ -1,6 +1,6 @@
 # Changelog
 
-## 3.2.1 - (2020-05-13)
+## 3.2.3 - (2020-11-30)
 * FIX: opening-brace multiline if else in scss
 
 ## 3.2.0 - (2020-05-13)
