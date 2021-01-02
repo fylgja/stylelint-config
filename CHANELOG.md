@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.3.0 - (2021-01-02)
+* IMP: allow @use, @forward without line break between
+* IMP: update dependencies
+
 ## 3.2.3 - (2020-11-30)
 * FIX: opening-brace multiline if else in scss
 
@@ -8,7 +12,7 @@
 * ADD: ignore for mq's with specific values
 
 ## 3.1.0 - (2020-05-10)
-* UP: stylelint dependencies
+* IMP: update dependencies
 * ADD:
   * rule comment-no-empty
   * rule dollar-variable-first-in-block
