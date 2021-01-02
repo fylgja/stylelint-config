@@ -6,7 +6,7 @@ module.exports = {
       {
         except: ["blockless-after-same-name-blockless", "first-nested"],
         ignore: ["after-comment", "inside-block"],
-        ignoreAtRules: ["import", "if", "else"],
+        ignoreAtRules: ["use", "forward", "import", "if", "else"],
       },
     ],
     "at-rule-no-unknown": [

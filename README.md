@@ -137,7 +137,7 @@ _These are better for project specific rules (if needed)._
 - `at-rule-empty-line-before`: always
   - except: blockless-after-same-name-blockless, first-nested
   - ignore: after-comment, inside-block
-  - ignoreAtRules: import, if, else
+  - ignoreAtRules: use, forward, import, if, else
 - `at-rule-no-unknown`: true
   - ignoreAtRules: for, each, if, else, mixin, mixin-*, include
     - _Includes support for PostCSS plugins_
