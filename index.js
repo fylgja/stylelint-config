@@ -20,6 +20,7 @@ module.exports = {
           "mixin",
           "/^mixin-/",
           "include",
+          "screen",
         ],
       },
     ],

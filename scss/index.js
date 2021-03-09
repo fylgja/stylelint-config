@@ -21,7 +21,7 @@ module.exports = {
     "scss/at-mixin-argumentless-call-parentheses": "never",
     "scss/at-mixin-parentheses-space-before": "never",
     "at-rule-no-unknown": null,
-    "scss/at-rule-no-unknown": true,
+    "scss/at-rule-no-unknown": [true, { ignoreAtRules: ["screen"] }],
     "scss/comment-no-empty": [true, { severity: "warning" }],
     "scss/dollar-variable-colon-newline-after": null,
     "scss/dollar-variable-colon-space-after": "always-single-line",
