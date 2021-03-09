@@ -139,8 +139,8 @@ _These are better for project specific rules (if needed)._
   - ignore: after-comment, inside-block
   - ignoreAtRules: use, forward, import, if, else
 - `at-rule-no-unknown`: true
-  - ignoreAtRules: for, each, if, else, mixin, mixin-*, include
-    - _Includes support for PostCSS plugins_
+  - ignoreAtRules: for, each, if, else, mixin, mixin-*, include, screen
+    - _Includes support for PostCSS plugins and TailwindCSS_
 - `at-rule-no-vendor-prefix`: true
 - `at-rule-semicolon-space-before`: never
   - _If there was a option for never, it would be never_
