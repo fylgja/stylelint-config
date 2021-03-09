@@ -1,8 +1,13 @@
 # Changelog
 
+## 3.4.0 - (2021-03-09)
+* ADD: `@screen` to at-rule-no-unknown for Tailwind support
+* IMP: update dependencies and drop older stylelint support
+
 ## 3.3.0 - (2021-01-02)
-* IMP: allow @use, @forward without line break between
-* IMP: update dependencies
+* IMP:
+  * allow @use, @forward without line break between
+  * update dependencies
 
 ## 3.2.3 - (2020-11-30)
 * FIX: opening-brace multiline if else in scss
