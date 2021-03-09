@@ -1,6 +1,6 @@
 {
   "name": "@fylgja/stylelint-config",
-  "version": "3.3.0",
+  "version": "3.4.0",
   "description": "Sharable stylelint config used by Fylgja packages",
   "homepage": "https://getfylgja.com/",
   "author": "Fylgja",
