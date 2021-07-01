@@ -2,40 +2,9 @@
 
 [![NPM version](https://img.shields.io/npm/v/@fylgja/stylelint-config.svg)](https://www.npmjs.org/package/@fylgja/stylelint-config)
 
-A sharable stylelint config object that enforces Fylgja's css rules.
+A sharable stylelint config object that enforces Fylgja's CSS rules.
 
 Extends [stylelint-config-recommended](https://github.com/stylelint/stylelint-config-standard).
-
-<details><summary>Table of Contents</summary>
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Extending](#extending)
-- [Extensions](#extensions)
-  - [SCSS](#scss)
-  - [LESS](#less)
-  - [Order](#order)
-- [Rules](#rules)
-  - [At-rule](#at-rule)
-  - [Block](#block)
-  - [Color](#color)
-  - [Comment](#comment)
-  - [Custom Property](#custom-property)
-  - [Declaration](#declaration)
-  - [Font family](#font-family)
-  - [Function](#function)
-  - [General / Sheet](#general--sheet)
-  - [Media](#media)
-  - [Number](#number)
-  - [Property](#property)
-  - [Rule](#rule)
-  - [Selector](#selector)
-  - [Shorthand property](#shorthand-property)
-  - [String](#string)
-  - [Value](#value)
-- [License](#license)
-
-</details>
 
 ## Installation
 
@@ -53,7 +22,7 @@ If you've installed @fylgja/stylelint-config, just set your stylelint config to:
 }
 ```
 
-_SCSS support found under the [Extensions](#Extensions)_
+_SCSS support found under the [Extensions](#extensions)_
 
 ## Extending
 
@@ -76,48 +45,41 @@ then add your overrides and additions there.
 
 ## Extensions
 
-While the core rules already take preprocessors in account.
-There are some times extra's rules needed.
-To add support for a specific preprocessor.
+While the core rules already take preprocessors in account,
+
+some times extra rules are needed,
+to add support for a specific preprocessor.
 
 ### SCSS
 
 We have added the stylelint plugin SCSS to better support SCSS styles
 
-To include these rules.
-Add to the end of the extend path `scss`
+To include these rules, add `scss` to the end of the extend path 
 
-```JSON
+```json
 {
     "extends": "@fylgja/stylelint-config/scss",
 }
 ```
 
-[For more infomation checkout the SCSS DOC.](./scss/README.md)
+[For more infomation checkout the SCSS DOC.](https://fylgja.dev/components/stylelint-config/scss/)
 
 ### LESS
 
-We have super small config to unset some rules,
+We have a super small config to unset some rules,
 that conflict with the LESS naming.
 
-```JSON
+```json
 {
     "extends": "@fylgja/stylelint-config/less",
 }
 ```
 
-[For more infomation checkout the LESS DOC.](./less/README.md)
+[For more infomation checkout the LESS DOC.](https://fylgja.dev/components/stylelint-config/less/)
 
 ### Order
 
-There are some parties that do this.
-
-Why don't we?
-Well we don't like strict code order.
-
-We do follow a specific style of ordering our code.
-
-That is described in our [CSS order DOC](./order/README.md).
+We do follow a specific style of ordering our code, it's is described in our [CSS order DOC](https://fylgja.dev/components/stylelint-config/order/).
 
 ## Rules
 
@@ -129,10 +91,10 @@ Since we extend on the [stylelint-config-recommended](https://github.com/styleli
 
 Down here are only the rules we have set.
 
-_We have not set any [white/black]-list values._
-_These are better for project specific rules (if needed)._
+_We have not set any [allowed/disallowed]-list values._
+_it's better to set those project specific, if needed._
 
-### At-rule
+**At-rule**
 
 - `at-rule-empty-line-before`: always
   - except: blockless-after-same-name-blockless, first-nested
@@ -145,30 +107,30 @@ _These are better for project specific rules (if needed)._
 - `at-rule-semicolon-space-before`: never
   - _If there was a option for never, it would be never_
 
-### Block
+**Block**
 
 - `block-closing-brace-newline-after`: always-multi-line
   - ignoreAtRules: if, else
 - `block-closing-brace-newline-before`: always-multi-line
 
-### Color
+**Color**
 
 - `color-hex-case`: lower
   - _Lowercase letters are easier to distinguish from numbers_
 - `color-hex-length`: short
 - `color-no-invalid-hex`: true
 
-### Comment
+**Comment**
 
 - `comment-empty-line-before`: always
   - except: first-nested
   - ignore: after-comment, stylelint-commands
 
-### Custom Property
+**Custom Property**
 
 - `custom-property-empty-line-before`: never
 
-### Declaration
+**Declaration**
 
 - `declaration-colon-newline-after`: null
   - _Works better with Prettier and does not always makes sense anyway._
@@ -179,21 +141,21 @@ _These are better for project specific rules (if needed)._
 - `declaration-empty-line-before`: never
 - `declaration-no-important`: true
 
-### Font family
+**Font family**
 
 - `font-family-name-quotes`: always-where-recommended
   - severity: warning
 - `font-family-no-missing-generic-family-keyword`: true
   - severity: warning
 
-### Function
+**Function**
 
 - `function-name-case`: lower
   - ignoreFunctions: _Starting with: get, (e.g getColor)_
 - `function-url-no-scheme-relative`: true
 - `function-url-quotes`: always
 
-### General / Sheet
+**General / Sheet**
 
 - `indentation`: 4
 - `max-line-length`: 80
@@ -201,12 +163,12 @@ _These are better for project specific rules (if needed)._
   - severity: warning
 - `max-nesting-depth`: 5
   - _5 allows easier setting of `if`'s and `mixins`._
-  _The css dept is enforced via `selector-max`._
+  _The CSS dept is enforced via `selector-max`._
 - `no-descending-specificity`: true
   - severity: warning
 - `no-empty-first-line`: true
 
-### Media
+**Media**
 
 - `media-feature-name-no-unknown`: true
   - severity: warning
@@ -214,27 +176,28 @@ _These are better for project specific rules (if needed)._
 - `media-query-list-comma-newline-before`: never-multi-line
   - _Would be never if this was an option_
 
-### Number
+**Number**
 
 - `number-max-precision`: 5
 
 > Notes about `number-leading-zero`.
 > Just as Bootstrap & Google we support no leading zero's.
-> But since pretty much all compilers and prettier use leading zero's.
-> We have kept the rule set to the default value, set by stylelint.
+> 
+> But since pretty much all compilers and prettier use leading zero's,
+> we have kept the rule set to the default value.
 
-### Property
+**Property**
 
 - `property-no-vendor-prefix`: true
   - ignoreProperties: appearance, text-size-adjust, tap-highlight-color
 
-### Rule
+**Rule**
 
 - `rule-empty-line-before`: always-multi-line
   - except: first-nested,
   - ignore: after-comment, inside-block
 
-### Selector
+**Selector**
 
 - `selector-attribute-quotes`: always
 - `selector-list-comma-newline-before`: never-multi-line
@@ -253,15 +216,15 @@ _These are better for project specific rules (if needed)._
 - `selector-type-no-unknown`: true
   - severity: warning
 
-### Shorthand property
+**Shorthand property**
 
 - `shorthand-property-no-redundant-values`: true
 
-### String
+**String**
 
 - `string-quotes`: double
 
-### Value
+**Value**
 
 - `value-keyword-case`: lower
   - ignoreProperties: with the name `family`
@@ -270,5 +233,3 @@ _These are better for project specific rules (if needed)._
 - `value-no-vendor-prefix`: true
   - ignoreValues: tap-highlight-color
 
-## License
-[MIT](LICENSE) © [Fylgja](http://getfylgja.com/)
