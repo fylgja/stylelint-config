@@ -21,10 +21,10 @@
     "url": "https://github.com/fylgja/stylelint-config/issues"
   },
   "peerDependencies": {
-    "stylelint": "^13.12.0"
+    "stylelint": "^13.13.0"
   },
   "dependencies": {
-    "stylelint-config-standard": "^22.0",
-    "stylelint-scss": "^3.18"
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-scss": "^3.20.1"
   }
 }

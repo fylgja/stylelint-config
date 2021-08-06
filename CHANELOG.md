@@ -6,11 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.5.0] - 2021-08-06
 ### Added
 - Dependabot
 
 ### Changed
 - Changelog is now using the keepachangelog syntax
+- Updated stylelint, stylelint-config-standard and stylelint-scss
 
 ### Fixed
 - selector-max-universal by allowing 2 for using the magic margin rule, `* + *`.
