@@ -1,118 +1,161 @@
 # Changelog
+All notable changes to this project will be documented in this file.
 
-## 3.4.0 - (2021-03-09)
-* ADD: `@screen` to at-rule-no-unknown for Tailwind support
-* IMP: update dependencies and drop older stylelint support
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## 3.3.0 - (2021-01-02)
-* IMP:
-  * allow @use, @forward without line break between
-  * update dependencies
+## [Unreleased]
 
-## 3.2.3 - (2020-11-30)
-* FIX: opening-brace multiline if else in scss
 
-## 3.2.0 - (2020-05-13)
-* DEL: rule dollar-variable-first-in-block
-* ADD: ignore for mq's with specific values
+### Changed
+- Changelog is now using the keepachangelog syntax
 
-## 3.1.0 - (2020-05-10)
-* IMP: update dependencies
-* ADD:
-  * rule comment-no-empty
-  * rule dollar-variable-first-in-block
+### Fixed
+- selector-max-universal by allowing 2 for using the magic margin rule, `* + *`.
 
-## 3.0.2 - (2019-12-27)
-* IMP: add more ignore rules to property-no-vendor-prefix.
+## [3.4.0] - 2021-03-09
+### Added
+- `@screen` to at-rule-no-unknown for Tailwind support
 
-## 3.0.1 - (2019-12-10)
-* IMP: Unset `declaration-colon-newline-after`, works better with Prettier
+### Changed
+- Update dependencies and drop older stylelint support
+
+## [3.3.0] - 2021-01-02
+### Changed
+- Allow @use, @forward without line break between
+- Update dependencies
+
+## [3.2.3] - 2020-11-30
+### Fixed
+- Opening-brace multiline if else in scss
+
+## [3.2.0] - 2020-05-13
+### Added
+- Ignore for mq's with specific values
+
+### Removed
+- Rule dollar-variable-first-in-block
+
+## [3.1.0] - 2020-05-10
+### Added
+- Rule comment-no-empty
+- Rule dollar-variable-first-in-block
+
+### Changed
+- Update dependencies
+
+## [3.0.2] - 2019-12-27
+### Added
+- More ignore rules to property-no-vendor-prefix.
+
+## [3.0.1] - 2019-12-10
+### Changed
+- Unset `declaration-colon-newline-after`, works better with Prettier
   and does not always makes sense anyway. So giving freedom to the dev.
 
-## 3.0.0 - (2019-11-17)
-* DEL:
-  * scss ignoreAtRules, fixed in [stylelint-scss v3.12](https://github.com/kristerkari/stylelint-scss/releases/tag/3.12.0)
-  * rules that are the same as stylelint-config-standard
-* IMP:
-  * update styleint-scss to v3.12
-  * cleanup LESS rules
-  * rules for better compatibility with other stylelint-configs and prettier
-* ADD: stylelint-config-standard as dependencies to simplify our own rules
+## [3.0.0] - 2019-11-17
+### Added
+- stylelint-config-standard as dependencies to simplify our own rules
 
-## 2.2.8 - (2019-10-02)
-* IMP: set scss/operator-no-unspaced to null to support the new sass modules.
-* ADD: scss ignoreAtRules for `@use` and `@forward` to support the new sass modules
+### Changed
+- Update styleint-scss to v3.12
+- Cleanup LESS rules
+- Improved rules for better compatibility with other stylelint-configs and prettier
 
-## 2.2.7 - (2019-10-02)
-* IMP: lower rule strength of scss @media use vars
+### Removed
+- SCSS ignoreAtRules, fixed in [stylelint-scss v3.12]https://github.com/kristerkari/stylelint-scss/releases/tag/3.12.0
+- Rules that are the same as stylelint-config-standard
+
+## [2.2.8] - 2019-10-02
+### Added
+- scss ignoreAtRules for `@use` and `@forward` to support the new sass modules
+
+### Changed
+- Set scss/operator-no-unspaced to null to support the new sass modules.
+
+## [2.2.7] - 2019-10-02
+### Changed
+- Lower rule strength of scss @media use vars
   to work easier with native css
 
-## 2.2.6 - (2019-08-31)
-* IMP: version of dependencies
+## [2.2.6] - 2019-08-31
+### Changed
+- Updated dependencies
 
-## 2.2.5 - (2019-08-11)
-* FIX: issue with variables and font family stacks
+## [2.2.5] - 2019-08-11
+### Fixes
+- Issue with variables and font family stacks
 
-## 2.2.4 - (2019-07-26)
-* IMP:
-  * changelog date format to ISO standard
-  * make at-rule-empty-line-before less strict, via swap
-    * "inside-block" should be ignored
-    * "first-nested" should be except
+## [2.2.4] - 2019-07-26
+### Changed
+- Changelog date format to ISO standard
+- Make at-rule-empty-line-before less strict, via swap
+  - "inside-block" should be ignored
+  - "first-nested" should be except
 
-## 2.2.3 - (2019-06-17)
-* FIX: Set scss/operator-no-newline-after to null
-  * This rule caused issues with the background shorthand
-    position size separator (`/`).
-    Also in JS and other languages it is common to split long lines after operators.
+## [2.2.3] - 2019-06-17
+### Fixes
+- Set scss/operator-no-newline-after to null
+  This rule caused issues with the background shorthand
+  position size separator `/`.
+  Also in JS and other languages it is common to split long lines after operators.
 
-## 2.2.2 - (2019-05-19)
-* IMP:
-  * Git URL Changed
-  * doc
-  * pkg dependencies
+## [2.2.2] - 2019-05-19
+### Changed
+- Git URL Changed
+- Docs
+- Updated dependencies
 
-## 2.2.1 - (2019-05-05)
-* IMP: formating
+## [2.2.0] - 2019-04-14
+### Added
+- Title to changelog
 
-## 2.2.0 - (2019-04-14)
-* ADD: title to changelog
-* IMP: Set indentation rule to 4
-  * Originally wanted this done via the editorconfig instead, but chose to set this.
+### Changed
+- Set indentation rule to 4
+  Originally wanted this done via the editorconfig instead, but chose to set this.
   As this fixes issue with the VSCode plugin and the cli cmd.
 
-## 2.1.0 - (2019-03-12)
-* IMP: make selector-no-qualifying-type less strict by allowing classes
-* DEL: font-weight-notation rule
-  * This rule give issues with some style cases and scss functions like nth
+## [2.1.0] - 2019-03-12
+### Changed
+- Make selector-no-qualifying-type less strict by allowing classes
 
-## 2.0.0 - (2019-02-22)
-* IMP:
-  * Order doc
-  * main stylelintconfig rules → _See readme what is include_
-  * main Doc
-  * stylelint version in pkg
-* ADD:
-  * SCSS plugin as dependency
-  * LESS Rules
-  * Less Doc
+### Removed
+- Font-weight-notation rule
+  This rule give issues with some style cases and scss functions like nth
 
-## 1.0.4 - (2019-01-06)
-* FIX: peerDep version
-* DEL: lockfile
+## [2.0.0] - 2019-02-22
+### Added
+- SCSS plugin as dependency
+- LESS Rules
+- Less Doc
 
-## 1.0.3 - (2019-01-03)
-* FIX: rule selector-max-type, missing ignore rules
-* IMP: editorconfig indent rule for index.js (stylelint-config)
+### Changed
+- Order doc
+- Main stylelintconfig rules → _See readme what is include_
+- Main Doc
+- Stylelint version in pkg
 
-## 1.0.2 - (2018-12-30)
-* IMP:
-  * add new rules to editorconfig
-  * gitingnore
-  * 📦 info: add empty scripts
+## [1.0.4] - 2019-01-06
+### Removed
+- Lockfile
 
-## 1.0.1 - (2018-10-22)
-* IMP: improve readme
+### Fixed
+- PeerDep version
 
-## 1.0.0 - (2018-10-21)
-* Initial release 🎉
+## [1.0.3] - 2019-01-03
+### Changed
+- Editorconfig indent rule for index.js stylelint-config
+
+### Fixed
+- Rule selector-max-type, missing ignore rules
+
+## [1.0.2] - 2018-12-30
+### Added
+- New rules to editorconfig
+
+### Changed
+- gitingnore
+- package.json add empty scripts
+
+## [1.0.0] - 2018-10-21
+Initial release 🎉
