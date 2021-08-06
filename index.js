@@ -101,7 +101,7 @@ module.exports = {
     "selector-max-compound-selectors": 4,
     "selector-max-id": 0,
     "selector-max-type": 2,
-    "selector-max-universal": 1,
+    "selector-max-universal": 2,
     "selector-no-qualifying-type": [true, { ignore: ["attribute", "class"] }],
     "selector-no-vendor-prefix": true,
     "selector-type-no-unknown": [true, { severity: "warning" }],
