@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.5.1] - 2021-08-23
+### Added
+- Workflow and tests
+
+### Fixed
+- sass conflict with `@use` and `@import` order
+
 ## [3.5.0] - 2021-08-06
 ### Added
 - Dependabot
