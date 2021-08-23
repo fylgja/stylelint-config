@@ -1,0 +1,7 @@
+@mixin use-mixin {
+    color: red;
+}
+
+.use-test {
+    @include use-mixin;
+}

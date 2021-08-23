@@ -3,6 +3,8 @@
   "version": "3.5.0",
   "description": "Sharable stylelint config used by Fylgja packages",
   "homepage": "https://getfylgja.com/",
+  "repository": "https://github.com/fylgja/stylelint-config",
+  "bugs": "https://github.com/fylgja/stylelint-config/issues",
   "author": "Fylgja",
   "license": "MIT",
   "keywords": [
@@ -13,12 +15,15 @@
     "scss linting"
   ],
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/fylgja/stylelint-config"
-  },
-  "bugs": {
-    "url": "https://github.com/fylgja/stylelint-config/issues"
+  "files": [
+    "index.js",
+    "scss/index.js",
+    "less/index.js"
+  ],
+  "scripts": {
+    "test-scss": "stylelint _tests_/**/*.scss --config scss/index.js",
+    "test-css": "stylelint _tests_/**/*.css --config index.js",
+    "test": "npm run test-scss && npm run test-css"
   },
   "peerDependencies": {
     "stylelint": "^13.13.0"
@@ -26,5 +31,8 @@
   "dependencies": {
     "stylelint-config-standard": "^22.0.0",
     "stylelint-scss": "^3.20.1"
+  },
+  "devDependencies": {
+    "stylelint": "^13.13.1"
   }
 }
