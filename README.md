@@ -1,6 +1,8 @@
 # Fylgja stylelint-config
 
 [![NPM version](https://img.shields.io/npm/v/@fylgja/stylelint-config.svg)](https://www.npmjs.org/package/@fylgja/stylelint-config)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/fylgja/stylelint-config/Test?color=%2343a047)
+![License](https://img.shields.io/github/license/fylgja/stylelint-config?color=%23234&style=flat-square)
 
 A sharable stylelint config object that enforces Fylgja's CSS rules.
 
