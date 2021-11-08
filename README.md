@@ -66,19 +66,6 @@ To include these rules, add `scss` to the end of the extend path
 
 [For more infomation checkout the SCSS DOC.](https://fylgja.dev/components/stylelint-config/scss/)
 
-### LESS
-
-We have a super small config to unset some rules,
-that conflict with the LESS naming.
-
-```json
-{
-    "extends": "@fylgja/stylelint-config/less",
-}
-```
-
-[For more infomation checkout the LESS DOC.](https://fylgja.dev/components/stylelint-config/less/)
-
 ### Order
 
 We do follow a specific style of ordering our code, it's is described in our [CSS order DOC](https://fylgja.dev/components/stylelint-config/order/).
