@@ -1,6 +1,7 @@
 @use "use" as *;
 
-$var-name: "prop";
+$var-name: "prop" !default;
+$bg: rgba(#ddd, 0.3) !default;
 
 .order-example {
     @include use-mixin;
