@@ -3,6 +3,7 @@ module.exports = {
   customSyntax: "postcss-scss",
   plugins: ["stylelint-scss"],
   rules: {
+    "at-rule-no-unknown": null,
     "no-invalid-position-at-import-rule": null,
     "scss/at-else-closing-brace-newline-after": "always-last-in-chain",
     "scss/at-else-closing-brace-space-after": "always-intermediate",
@@ -10,19 +11,12 @@ module.exports = {
     "scss/at-else-if-parentheses-space-before": "always",
     "scss/at-extend-no-missing-placeholder": true,
     "scss/at-function-parentheses-space-before": "never",
-    "block-opening-brace-space-before": [
-      "always",
-      {
-        ignoreAtRules: ["/if/", "/else/"],
-      },
-    ],
     "scss/at-if-closing-brace-newline-after": "always-last-in-chain",
     "scss/at-if-closing-brace-space-after": "always-intermediate",
     "scss/at-if-no-null": true,
     "scss/at-import-no-partial-leading-underscore": true,
     "scss/at-mixin-argumentless-call-parentheses": "never",
     "scss/at-mixin-parentheses-space-before": "never",
-    "at-rule-no-unknown": null,
     "scss/at-rule-no-unknown": [true, { ignoreAtRules: ["screen"] }],
     "scss/comment-no-empty": [true, { severity: "warning" }],
     "scss/dollar-variable-colon-newline-after": null,
@@ -39,10 +33,7 @@ module.exports = {
     ],
     "scss/media-feature-value-dollar-variable": [
       "always",
-      {
-        severity: "warning",
-        ignore: ["keywords"],
-      },
+      { severity: "warning", ignore: ["keywords"] },
     ],
     "scss/operator-no-newline-after": null,
     "scss/operator-no-newline-before": true,

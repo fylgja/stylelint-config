@@ -29,9 +29,13 @@ module.exports = {
     "at-rule-semicolon-space-before": "never",
     "block-closing-brace-newline-after": [
       "always-multi-line",
-      { ignoreAtRules: ["if", "else"] },
+      { ignoreAtRules: ["if", "else", "when"] },
     ],
     "block-closing-brace-newline-before": "always-multi-line",
+    "block-opening-brace-space-before": [
+      "always",
+      { ignoreAtRules: ["if", "else", "when"] },
+    ],
     "color-hex-case": [
       "lower",
       { message: "Lowercase letters are easier to distinguish from numbers" },
@@ -45,9 +49,9 @@ module.exports = {
       },
     ],
     "custom-property-empty-line-before": "never",
-    "declaration-colon-newline-after": null,
     "declaration-block-no-redundant-longhand-properties": true,
     "declaration-block-semicolon-newline-before": "never-multi-line",
+    "declaration-colon-newline-after": null,
     "declaration-empty-line-before": "never",
     "declaration-no-important": true,
     "font-family-name-quotes": [
@@ -65,10 +69,7 @@ module.exports = {
     indentation: 4,
     "max-line-length": [
       80,
-      {
-        ignorePattern: ["/https?://[0-9,a-z]*.*/"],
-        severity: "warning",
-      },
+      { ignorePattern: ["/https?://[0-9,a-z]*.*/"], severity: "warning" },
     ],
     "max-nesting-depth": 5,
     "media-feature-name-no-unknown": [true, { severity: "warning" }],
@@ -89,10 +90,7 @@ module.exports = {
     ],
     "rule-empty-line-before": [
       "always-multi-line",
-      {
-        except: ["first-nested"],
-        ignore: ["after-comment", "inside-block"],
-      },
+      { except: ["first-nested"], ignore: ["after-comment", "inside-block"] },
     ],
     "selector-attribute-quotes": "always",
     "selector-list-comma-newline-before": "never-multi-line",
@@ -109,8 +107,8 @@ module.exports = {
     "shorthand-property-no-redundant-values": true,
     "string-quotes": "double",
     "value-keyword-case": ["lower", { ignoreProperties: ["/family/"] }],
-    "value-list-comma-newline-before": "never-multi-line",
     "value-list-comma-newline-after": null,
+    "value-list-comma-newline-before": "never-multi-line",
     "value-no-vendor-prefix": [true, { ignoreValues: ["tap-highlight-color"] }],
   },
 };
