@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - syntax support to scss rules
 - rule `scss/declaration-nested-properties-no-divided-groups`
 - rule `scss/no-duplicate-mixins`
+- warning rule `scss/no-global-function-names`
 
 ### Changed
 - Updated stylelint to [version 14](https://github.com/stylelint/stylelint/releases/tag/14.0.0)
