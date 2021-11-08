@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ## [4.0.0] - 2021-11-08
+### Added
+- Unset `alpha-value-notation` rule set by [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard/issues/210)
+
 ### Changed
 - Updated stylelint to [version 14](https://github.com/stylelint/stylelint/releases/tag/14.0.0)
   and dropped support for version 13

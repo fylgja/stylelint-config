@@ -1,6 +1,7 @@
 module.exports = {
   extends: ["stylelint-config-standard"],
   rules: {
+    "alpha-value-notation": null,
     "at-rule-empty-line-before": [
       "always",
       {
