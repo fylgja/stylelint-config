@@ -100,12 +100,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - stylelint-config-standard as dependencies to simplify our own rules
 
 ### Changed
-- Update styleint-scss to v3.12
+- Update stylelint-scss to v3.12
 - Cleanup LESS rules
 - Improved rules for better compatibility with other stylelint-configs and prettier
 
 ### Removed
-- SCSS ignoreAtRules, fixed in [stylelint-scss v3.12]https://github.com/kristerkari/stylelint-scss/releases/tag/3.12.0
+- SCSS ignoreAtRules, fixed in [stylelint-scss v3.12](https://github.com/kristerkari/stylelint-scss/releases/tag/3.12.0)
 - Rules that are the same as stylelint-config-standard
 
 ## [2.2.8] - 2019-10-02
@@ -173,7 +173,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Order doc
-- Main stylelintconfig rules → _See readme what is include_
+- Main stylelint-config rules → _See readme what is include_
 - Main Doc
 - Stylelint version in pkg
 
@@ -196,7 +196,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - New rules to editorconfig
 
 ### Changed
-- gitingnore
+- gitignore
 - package.json add empty scripts
 
 ## [1.0.0] - 2018-10-21
