@@ -68,7 +68,6 @@ module.exports = {
     ],
     "max-nesting-depth": 5,
     "media-feature-name-no-unknown": [true, { severity: "warning" }],
-    "media-feature-name-no-vendor-prefix": true,
     "media-query-list-comma-newline-before": "never-multi-line",
     "no-descending-specificity": [true, { severity: "warning" }],
     "no-empty-first-line": true,
