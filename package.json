@@ -17,8 +17,7 @@
   "main": "index.js",
   "files": [
     "index.js",
-    "scss/index.js",
-    "less/index.js"
+    "scss/index.js"
   ],
   "scripts": {
     "test-scss": "stylelint _tests_/**/*.scss --config scss/index.js",
