@@ -70,7 +70,6 @@ module.exports = {
     "media-feature-name-no-unknown": [true, { severity: "warning" }],
     "media-query-list-comma-newline-before": "never-multi-line",
     "no-descending-specificity": [true, { severity: "warning" }],
-    "no-empty-first-line": true,
     "number-max-precision": 5,
     "property-no-vendor-prefix": [
       true,
