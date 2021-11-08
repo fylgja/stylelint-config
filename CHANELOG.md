@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 - LessCSS specific syntax support
+- rule `font-family-name-quotes`
 
 ## [3.5.1] - 2021-08-23
 ### Added

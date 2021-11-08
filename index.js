@@ -54,10 +54,6 @@ module.exports = {
     "declaration-colon-newline-after": null,
     "declaration-empty-line-before": "never",
     "declaration-no-important": true,
-    "font-family-name-quotes": [
-      "always-where-recommended",
-      { severity: "warning" },
-    ],
     "font-family-no-duplicate-names": [true, { severity: "warning" }],
     "font-family-no-missing-generic-family-keyword": [
       true,
