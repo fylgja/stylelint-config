@@ -61,7 +61,6 @@ module.exports = {
     ],
     "function-name-case": ["lower", { ignoreFunctions: ["/^get.*$/"] }],
     "function-url-no-scheme-relative": true,
-    "function-url-quotes": "always",
     indentation: 4,
     "max-line-length": [
       80,
