@@ -1,5 +1,6 @@
 module.exports = {
   extends: ["../index.js"],
+  customSyntax: "postcss-scss",
   plugins: ["stylelint-scss"],
   rules: {
     "no-invalid-position-at-import-rule": null,
