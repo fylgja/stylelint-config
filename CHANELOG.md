@@ -25,6 +25,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - rule `no-empty-first-line`
 - rule `selector-attribute-quotes`
 - rule `selector-no-vendor-prefix`
+- rule `shorthand-property-no-redundant-values`
 
 ## [3.5.1] - 2021-08-23
 ### Added

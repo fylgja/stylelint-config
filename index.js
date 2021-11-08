@@ -95,7 +95,6 @@ module.exports = {
     "selector-max-universal": 2,
     "selector-no-qualifying-type": [true, { ignore: ["attribute", "class"] }],
     "selector-type-no-unknown": [true, { severity: "warning" }],
-    "shorthand-property-no-redundant-values": true,
     "string-quotes": "double",
     "value-keyword-case": ["lower", { ignoreProperties: ["/family/"] }],
     "value-list-comma-newline-after": null,
