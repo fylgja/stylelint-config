@@ -69,6 +69,8 @@ $var-name: "prop";
 }
 
 /* Fylgja specific */
-.class.-with-modifier {
-    --var: var(--text, "yeah");
+.class {
+    &.-with-modifier {
+        --var: var(--text, "yeah");
+    }
 }
