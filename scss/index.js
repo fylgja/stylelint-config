@@ -37,6 +37,7 @@ module.exports = {
       "always",
       { severity: "warning", ignore: ["keywords"] },
     ],
+    "scss/no-duplicate-mixins": true,
     "scss/operator-no-newline-after": null,
     "scss/operator-no-newline-before": true,
     "scss/operator-no-unspaced": null,

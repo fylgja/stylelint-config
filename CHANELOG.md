@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Unset `alpha-value-notation` rule set by [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard/issues/210)
 - syntax support to scss rules
 - rule `scss/declaration-nested-properties-no-divided-groups`
+- rule `scss/no-duplicate-mixins`
 
 ### Changed
 - Updated stylelint to [version 14](https://github.com/stylelint/stylelint/releases/tag/14.0.0)
