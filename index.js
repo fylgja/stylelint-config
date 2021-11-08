@@ -94,7 +94,6 @@ module.exports = {
     "selector-max-type": 2,
     "selector-max-universal": 2,
     "selector-no-qualifying-type": [true, { ignore: ["attribute", "class"] }],
-    "selector-no-vendor-prefix": true,
     "selector-type-no-unknown": [true, { severity: "warning" }],
     "shorthand-property-no-redundant-values": true,
     "string-quotes": "double",
