@@ -20,6 +20,7 @@ module.exports = {
     "scss/at-mixin-parentheses-space-before": "never",
     "scss/at-rule-no-unknown": [true, { ignoreAtRules: ["screen"] }],
     "scss/comment-no-empty": [true, { severity: "warning" }],
+    "scss/declaration-nested-properties-no-divided-groups": true,
     "scss/dollar-variable-colon-newline-after": null,
     "scss/dollar-variable-colon-space-after": "always-single-line",
     "scss/dollar-variable-colon-space-before": "never",
