@@ -5,6 +5,7 @@ module.exports = {
   rules: {
     "at-rule-no-unknown": null,
     "comment-no-empty": null,
+    "custom-property-pattern": null,
     "no-invalid-position-at-import-rule": null,
     "scss/at-else-closing-brace-newline-after": "always-last-in-chain",
     "scss/at-else-closing-brace-space-after": "always-intermediate",
