@@ -7,12 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [4.0.1] - 2021-11-08
-### Added
-- unset `custom-property-pattern` for scss
-
-### Changed
+### Fixed
+- Unset `custom-property-pattern` for scss
 - Unset `scss/no-global-function-names` and fixed issue with native min and max
 - Unset `color-function-notation` for SCSS based rgba color
+- Allow css modifier classes 
 
 ## [4.0.0] - 2021-11-08
 ### Added

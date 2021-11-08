@@ -86,6 +86,10 @@ module.exports = {
       "always-multi-line",
       { except: ["first-nested"], ignore: ["after-comment", "inside-block"] },
     ],
+    "selector-class-pattern": [
+      "^(?:[a-z]|-)([a-z0-9]*)(-[a-z0-9]+)*$",
+      { message: "Expected class selector to be kebab-case" },
+    ],
     "selector-list-comma-newline-before": "never-multi-line",
     "selector-list-comma-space-after": "always-single-line",
     "selector-max-attribute": 2,
