@@ -1,10 +1,13 @@
 @use "use" as *;
 
+$var-name: "prop";
+
 .order-example {
     @include use-mixin;
 
     /* var's/special setters */
     --color-theme: rebeccapurple;
+    --#{$var-name}: "value";
     content: attr();
     counter-reset: section;
     counter-increment: section;
@@ -63,4 +66,9 @@
     overflow: visible;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
+}
+
+/* Fylgja specific */
+.class.-with-modifier {
+    --var: var(--text, "yeah");
 }

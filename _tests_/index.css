@@ -60,3 +60,8 @@
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
 }
+
+/* Fylgja specific */
+.class.-with-modifier {
+    --var: var(--text, "yeah");
+}
