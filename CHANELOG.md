@@ -19,13 +19,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 - LessCSS specific syntax support
-- rule `font-family-name-quotes`
-- rule `function-url-quotes`
-- rule `media-feature-name-no-vendor-prefix`
-- rule `no-empty-first-line`
-- rule `selector-attribute-quotes`
-- rule `selector-no-vendor-prefix`
-- rule `shorthand-property-no-redundant-values`
+- Rules now part of recommend rules
+  - `font-family-name-quotes`
+  - `function-url-quotes`
+  - `media-feature-name-no-vendor-prefix`
+  - `no-empty-first-line`
+  - `selector-attribute-quotes`
+  - `selector-no-vendor-prefix`
+  - `shorthand-property-no-redundant-values`
+  - `string-quotes`
 
 ## [3.5.1] - 2021-08-23
 ### Added
