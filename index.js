@@ -85,7 +85,6 @@ module.exports = {
       "always-multi-line",
       { except: ["first-nested"], ignore: ["after-comment", "inside-block"] },
     ],
-    "selector-attribute-quotes": "always",
     "selector-list-comma-newline-before": "never-multi-line",
     "selector-list-comma-space-after": "always-single-line",
     "selector-max-attribute": 2,

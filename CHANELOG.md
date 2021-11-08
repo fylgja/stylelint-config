@@ -23,6 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - rule `function-url-quotes`
 - rule `media-feature-name-no-vendor-prefix`
 - rule `no-empty-first-line`
+- rule `selector-attribute-quotes`
 
 ## [3.5.1] - 2021-08-23
 ### Added
