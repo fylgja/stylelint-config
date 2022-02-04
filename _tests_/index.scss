@@ -38,15 +38,15 @@ $bg: rgba(#ddd, 0.3) !default;
     margin: auto;
     padding: 0;
     border-radius: 50%;
-    border: 1px solid currentColor;
+    border: 1px solid currentcolor;
     box-shadow: 0 0 0 #fff2;
     outline: none;
 
     /* Visual */
     background-color: #eee;
     color: #333;
-    fill: currentColor; /* svg */
-    stroke: currentColor; /* svg */
+    fill: currentcolor; /* svg */
+    stroke: currentcolor; /* svg */
 
     /* Typographic */
     font-family: system-ui, sans-serif;
