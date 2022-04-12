@@ -1,4 +1,5 @@
 @use "sass:color";
+@import "import.css";
 @use "use" as *;
 
 $var-name: "prop" !default;
