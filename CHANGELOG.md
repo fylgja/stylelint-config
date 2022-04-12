@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Changed
 - Updated stylelint to [version 14.6](https://github.com/stylelint/stylelint/releases/tag/14.6.1)
+- Allow 1 ID selector in your CSS,
+  there are cases that work best with id's,
+  just keep the limit to 1 selector,
+  but there should never be a case where you need to 2 (or more) id's in 1 CSS selector.
 
 ## [4.0.1] - 2021-11-08
 ### Fixed
