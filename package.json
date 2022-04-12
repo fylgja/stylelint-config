@@ -25,14 +25,14 @@
     "test": "npm run test-scss && npm run test-css"
   },
   "dependencies": {
-    "postcss-scss": "^4.0.2",
+    "postcss-scss": "^4.0.3",
     "stylelint-config-standard": "^25.0.0",
-    "stylelint-scss": "^4.0.0"
+    "stylelint-scss": "^4.2.0"
   },
   "devDependencies": {
-    "stylelint": "^14.0.0"
+    "stylelint": "^14.6.1"
   },
   "peerDependencies": {
-    "stylelint": "^14.0.0"
+    "stylelint": "^14.6.1"
   }
 }
