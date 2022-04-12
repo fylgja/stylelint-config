@@ -1,3 +1,4 @@
+@use "sass:color";
 @use "use" as *;
 
 $var-name: "prop" !default;
@@ -39,7 +40,7 @@ $bg: rgba(#ddd, 0.3) !default;
     padding: 0;
     border-radius: 50%;
     border: 1px solid currentcolor;
-    box-shadow: 0 0 0 #fff2;
+    box-shadow: 0 0 0 color.change(#fff, $opacity: 0.2);
     outline: none;
 
     /* Visual */

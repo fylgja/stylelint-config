@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- unset function-no-unknown for sass
+  This does not play wel with namespaced `@use`'s
+
 ## [4.1.0] - 2022-04-12
 ### Changed
 - Updated stylelint to [version 14.6](https://github.com/stylelint/stylelint/releases/tag/14.6.1)

@@ -207,4 +207,3 @@ _it's better to set those project specific, if needed._
 - `value-list-comma-newline-before`: never-multi-line
 - `value-no-vendor-prefix`: true
   - ignoreValues: tap-highlight-color
-
