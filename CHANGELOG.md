@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [4.2.0] - 2022-08-16
 ### Changed
-- Updated stylelint to [version 14.10](https://github.com/stylelint/stylelint/releases/tag/14.10
+- Updated stylelint to [version 14.10](https://github.com/stylelint/stylelint/releases/tag/14.10)
 - Set `hue-degree-notation` to number
 
 ## [4.1.1] - 2022-04-12
