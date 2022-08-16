@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Set `hue-degree-notation` to number
+
 ## [4.1.1] - 2022-04-12
 ### Changed
 - Enable `no-invalid-position-at-import-rule` for SCSS with `@use` and `@forward` support
