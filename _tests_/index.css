@@ -65,3 +65,13 @@
 .class.-with-modifier {
     --var: var(--text, "yeah");
 }
+
+/* Animations */
+@keyframes foo {
+    from {
+        transform: scaleX(1);
+    }
+    to {
+        transform: scaleX(1.5);
+    }
+}
