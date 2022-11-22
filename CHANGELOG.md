@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Unset `import-notation`, respects the import syntax for both cases
+
 ## [4.2.0] - 2022-08-16
 ### Changed
 - Updated stylelint to [version 14.10](https://github.com/stylelint/stylelint/releases/tag/14.10)
@@ -16,7 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Enable `no-invalid-position-at-import-rule` for SCSS with `@use` and `@forward` support
 
 ### Fixed
-- unset function-no-unknown for sass
+- Unset `function-no-unknown` for sass
   This does not play wel with namespaced `@use`'s
 
 ## [4.1.0] - 2022-04-12

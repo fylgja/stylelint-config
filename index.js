@@ -64,6 +64,7 @@ module.exports = {
     "function-url-no-scheme-relative": true,
     "hue-degree-notation": "number",
     indentation: 4,
+    "import-notation": null,
     "max-line-length": [
       80,
       { ignorePattern: ["/https?://[0-9,a-z]*.*/"], severity: "warning" },

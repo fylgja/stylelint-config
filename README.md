@@ -153,6 +153,8 @@ _it's better to set those project specific, if needed._
   _The CSS dept is enforced via `selector-max`._
 - `no-descending-specificity`: true
   - severity: warning
+- `import-notation`: null
+  - Allow both string and url
 
 **Media**
 
