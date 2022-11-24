@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Specials rules for Tailwind support in both default and scss syntax
 
+### Changed
+- Dropped `at-rule-no-unknown` for default
+  - For custom PostCSS rules use your own custom rules after this extend
+
 ## [4.2.1] - 2022-11-24
 ### Changed
 - Updated stylelint to [version 14.14](https://github.com/stylelint/stylelint/releases/tag/14.14.0)

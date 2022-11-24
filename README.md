@@ -47,10 +47,11 @@ then add your overrides and additions there.
 
 ## Extensions
 
-While the core rules already take preprocessors in account,
+The core rules take some preprocessors rules in account,
+if they do not impact any CSS defaults.
 
-some times extra rules are needed,
-to add support for a specific preprocessor.
+For better support,
+use the following extensions.
 
 ### SCSS
 
@@ -69,6 +70,26 @@ To include these rules, add `scss` to the end of the extend path
 ### Order
 
 We do follow a specific style of ordering our code, it's is described in our [CSS order DOC](https://fylgja.dev/components/stylelint-config/order/).
+
+### TailwindCSS Support
+
+In case you do need to use Tailwind this special config will only add support for custom functions.
+
+Use it with;
+
+```json
+{
+    "extends": "@fylgja/stylelint-config/tailwind",
+}
+```
+
+and for SCSS support with;
+
+```json
+{
+    "extends": "@fylgja/stylelint-config/tailwind/scss",
+}
+```
 
 ## Rules
 
@@ -89,9 +110,6 @@ _it's better to set those project specific, if needed._
   - except: blockless-after-same-name-blockless, first-nested
   - ignore: after-comment, inside-block
   - ignoreAtRules: use, forward, import, if, else
-- `at-rule-no-unknown`: true
-  - ignoreAtRules: for, each, if, else, mixin, mixin-*, include, screen
-    - _Includes support for PostCSS plugins and TailwindCSS_
 - `at-rule-no-vendor-prefix`: true
 - `at-rule-semicolon-space-before`: never
   - _If there was a option for never, it would be never_

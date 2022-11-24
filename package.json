@@ -17,12 +17,16 @@
   "main": "index.js",
   "files": [
     "index.js",
-    "scss/index.js"
+    "scss/*.js",
+    "tailwind/*.js"
   ],
   "scripts": {
-    "test-scss": "stylelint _tests_/**/*.scss --config scss/index.js",
-    "test-css": "stylelint _tests_/**/*.css --config index.js",
-    "test": "npm run test-scss && npm run test-css"
+    "test:scss": "stylelint _tests_/**/*.scss --config scss/index.js",
+    "test:css": "stylelint _tests_/**/*.css --config index.js",
+    "test:tailwind:css": "stylelint _tests_/**/*.css --config tailwind/index.js",
+    "test:tailwind:scss": "stylelint _tests_/**/*.scss --config tailwind/scss.js",
+    "test:tailwind": "npm run test:tailwind:scss && npm run test:tailwind:css",
+    "test": "npm run test:scss && npm run test:css && test:tailwind"
   },
   "dependencies": {
     "postcss-scss": "^4.0.4",

@@ -4,6 +4,14 @@ module.exports = {
   plugins: ["stylelint-scss"],
   rules: {
     "annotation-no-unknown": [true, { ignoreAnnotations: ["default"] }],
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        except: ["blockless-after-same-name-blockless", "first-nested"],
+        ignore: ["after-comment", "inside-block"],
+        ignoreAtRules: ["use", "forward", "import", "if", "else"],
+      },
+    ],
     "at-rule-no-unknown": null,
     "comment-no-empty": null,
     "custom-property-pattern": null,
@@ -26,7 +34,7 @@ module.exports = {
     "scss/at-import-no-partial-leading-underscore": true,
     "scss/at-mixin-argumentless-call-parentheses": "never",
     "scss/at-mixin-parentheses-space-before": "never",
-    "scss/at-rule-no-unknown": [true, { ignoreAtRules: ["screen"] }],
+    "scss/at-rule-no-unknown": true,
     "scss/comment-no-empty": [true, { severity: "warning" }],
     "scss/declaration-nested-properties-no-divided-groups": true,
     "scss/dollar-variable-colon-newline-after": null,
