@@ -7,11 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- Specials rules for Tailwind support in both default and scss syntax
+- Support for Tailwind specific syntax
+- Support for Vue specific syntax
 
 ### Changed
-- Dropped `at-rule-no-unknown` for default
-  - For custom PostCSS rules use your own custom rules after this extend
+- Split rules from export bundles,
+  each rule is now in the rules folder and extended in the options offered in the root of this project,
+  It is now easier to build your own config based on these rules
+- Dropped `at-rule-no-unknown` for default,
+  for custom PostCSS rules use your own custom rules after this extend
 
 ## [4.2.1] - 2022-11-24
 ### Changed
