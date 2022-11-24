@@ -22,13 +22,14 @@
     "vue/*.js"
   ],
   "scripts": {
-    "test:vue:tw": "stylelint _tests_/tw.vue --config tw.js",
+    "test:vue:tailwind": "stylelint _tests_/tailwind.vue --config tailwind.js",
     "test:vue:scss": "stylelint _tests_/scss.vue --config scss.js",
-    "test:vue": "stylelint _tests_/index.vue --config index.js",
-    "test:tw": "stylelint _tests_/*.scss --config tw.js",
+    "test:vue:css": "stylelint _tests_/index.vue --config index.js",
+    "test:vue": "npm run test:vue:tailwind && npm run test:vue:scss && npm run test:vue:css",
+    "test:tailwind": "stylelint _tests_/*.scss --config tailwind.js",
     "test:scss": "stylelint _tests_/*.scss --config scss.js",
     "test:css": "stylelint _tests_/*.css --config index.js",
-    "test": "npm run test:scss && npm run test:css && npm run test:tw"
+    "test": "npm run test:css && npm run test:scss && npm run test:tailwind && npm run test:vue"
   },
   "dependencies": {
     "postcss-html": "^1.5.0",

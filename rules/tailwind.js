@@ -16,7 +16,8 @@ module.exports = {
   plugins: ["stylelint-scss"],
   rules: {
     "at-rule-no-unknown": null,
-    "function-no-unknown": [true, { ignoreFunctions: ["theme"] }],
+    "function-no-unknown": null,
+    "scss/function-no-unknown": [true, { ignoreFunctions: ["theme"] }],
     "scss/at-rule-no-unknown": [true, { ignoreAtRules: twFunctions }],
   },
 };
