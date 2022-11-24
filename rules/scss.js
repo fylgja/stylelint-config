@@ -1,9 +1,11 @@
 module.exports = {
-  extends: ["../index.js"],
   customSyntax: "postcss-scss",
   plugins: ["stylelint-scss"],
   rules: {
-    "annotation-no-unknown": [true, { ignoreAnnotations: ["default"] }],
+    "annotation-no-unknown": [
+      true,
+      { ignoreAnnotations: ["default", "global"] },
+    ],
     "at-rule-empty-line-before": [
       "always",
       {
@@ -18,9 +20,7 @@ module.exports = {
     "function-no-unknown": null,
     "no-invalid-position-at-import-rule": [
       true,
-      {
-        ignoreAtRules: ["use", "forward"],
-      },
+      { ignoreAtRules: ["use", "forward"] },
     ],
     "scss/at-else-closing-brace-newline-after": "always-last-in-chain",
     "scss/at-else-closing-brace-space-after": "always-intermediate",
@@ -51,7 +51,10 @@ module.exports = {
     ],
     "scss/media-feature-value-dollar-variable": [
       "always",
-      { severity: "warning", ignore: ["keywords"] },
+      {
+        severity: "warning",
+        ignore: ["keywords"],
+      },
     ],
     "scss/no-duplicate-mixins": true,
     "scss/no-global-function-names": null,
