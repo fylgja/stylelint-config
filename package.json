@@ -15,10 +15,11 @@
     "scss linting"
   ],
   "main": "index.js",
+  "unpkg": "index.json",
   "files": [
-    "index.js",
-    "scss/*.js",
-    "tailwind/*.js"
+    "*.js",
+    "rules/*.js",
+    "vue/*.js"
   ],
   "scripts": {
     "test:vue:tw": "stylelint _tests_/tw.vue --config tw.js",
@@ -30,7 +31,9 @@
     "test": "npm run test:scss && npm run test:css && npm run test:tw"
   },
   "dependencies": {
+    "postcss-html": "^1.5.0",
     "postcss-scss": "^4.0.4",
+    "stylelint-config-html": "^1.1.0",
     "stylelint-config-standard": "^29.0.0",
     "stylelint-scss": "^4.3.0"
   },

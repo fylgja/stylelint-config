@@ -1,4 +1,8 @@
-const baseRules = ["stylelint-config-standard", "./rules/default"];
+const baseRules = [
+  "stylelint-config-standard",
+  "./rules/default",
+  "./rules/scss",
+];
 
 module.exports = {
   extends: baseRules,
