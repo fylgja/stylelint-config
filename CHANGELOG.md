@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [4.2.1] - 2022-11-24
 ### Changed
+- Updated stylelint to [version 14.14](https://github.com/stylelint/stylelint/releases/tag/14.14.0)
 - Unset `import-notation`, respects the import syntax for both cases
 
 ## [4.2.0] - 2022-08-16
