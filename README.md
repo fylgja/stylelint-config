@@ -6,7 +6,21 @@
 
 A sharable stylelint config object that enforces Fylgja's CSS rules.
 
-Extends [stylelint-config-recommended](https://github.com/stylelint/stylelint-config-standard).
+<details><summary>Table of Contents</summary>
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Extending](#extending)
+- [Extra Syntax Support](#extra-syntax-support)
+  - [SCSS](#scss)
+  - [TailwindCSS](#tailwindcss)
+  - [Vue](#vue)
+  - [CSS Order](#css-order)
+  - [Custom config](#custom-config)
+  - [Inline CSS support](#inline-css-support)
+- [Rules](#rules)
+
+</details>
 
 ## Installation
 
@@ -24,7 +38,7 @@ If you've installed @fylgja/stylelint-config, just set your stylelint config to:
 }
 ```
 
-_SCSS support found under the [Extensions](#extensions)_
+_SCSS, Tailwind and Vue support found under the [Extra Syntax Support](#extra-syntax-support)_
 
 ## Extending
 
@@ -45,19 +59,17 @@ then add your overrides and additions there.
 }
 ```
 
-## Extensions
+## Extra Syntax Support
 
 The core rules take some preprocessors rules in account,
 if they do not impact any CSS defaults.
 
-For better support,
-use the following extensions.
+For better support pre-processors and post-processors support,
+use the following options below.
 
 ### SCSS
 
-We have added the stylelint plugin SCSS to better support SCSS styles
-
-To include these rules, add `scss` to the end of the extend path 
+To include these rules, add `scss` to the end of the extend path;
 
 ```json
 {
@@ -65,15 +77,11 @@ To include these rules, add `scss` to the end of the extend path
 }
 ```
 
-[For more infomation checkout the SCSS DOC.](https://fylgja.dev/components/stylelint-config/scss/)
+[For more infomation checkout the SCSS Doc on fylgja.dev.](https://fylgja.dev/components/stylelint-config/scss/)
 
-### Order
+### TailwindCSS
 
-We do follow a specific style of ordering our code, it's is described in our [CSS order DOC](https://fylgja.dev/components/stylelint-config/order/).
-
-### TailwindCSS Support
-
-In case you do need to use Tailwind this special config will only add support for custom functions.
+To include these rules, add `tailwind` to the end of the extend path;
 
 Use it with;
 
@@ -83,13 +91,47 @@ Use it with;
 }
 ```
 
-and for SCSS support with;
+<!-- [For more infomation checkout the Tailwind Doc on fylgja.dev.](https://fylgja.dev/components/stylelint-config/tailwind/) -->
+
+### Vue
+
+We have added the plugin [stylelint-config-html](https://github.com/ota-meshi/stylelint-config-html) to add support styles in Vue Components (inline styles).
+
+These rules are part of each other options,
+and automatically used if the file type is vue.
+
+Use any of the **extends** options mention above and this will alos work with Vue.
+
+<!-- [For more infomation checkout the Vue Doc on fylgja.dev.](https://fylgja.dev/components/stylelint-config/vue/) -->
+
+### CSS Order
+
+We do follow a specific style of ordering our code, it's is described in our [CSS order DOC](https://fylgja.dev/components/stylelint-config/order/).
+
+### Custom config
+
+<!-- TODO add docs for this section -->
+
+### Inline CSS support
+
+With fylgja-stylelint-config we also install the the [stylelint-config-html](https://github.com/ota-meshi/stylelint-config-html) plugin, for Vue support.
+
+This plugin will add support to check your project not just for errors in CSS files,
+but also checks in the style tags in your HTML.
+
+To use this also include the stylelint-config-html after any other extends;
 
 ```json
 {
-    "extends": "@fylgja/stylelint-config/tailwind/scss",
+    "extends": [
+        "@fylgja/stylelint-config",
+        "stylelint-config-html"
+    ]
 }
 ```
+
+_For more configuration options see the [github page](https://github.com/ota-meshi/stylelint-config-html#book-usage),_
+_And for [VSCode support](https://github.com/ota-meshi/stylelint-config-html#visual-studio-code) see the also the github page._
 
 ## Rules
 
