@@ -21,12 +21,13 @@
     "tailwind/*.js"
   ],
   "scripts": {
-    "test:scss": "stylelint _tests_/**/*.scss --config scss/index.js",
-    "test:css": "stylelint _tests_/**/*.css --config index.js",
-    "test:tailwind:css": "stylelint _tests_/**/*.css --config tailwind/index.js",
-    "test:tailwind:scss": "stylelint _tests_/**/*.scss --config tailwind/scss.js",
-    "test:tailwind": "npm run test:tailwind:scss && npm run test:tailwind:css",
-    "test": "npm run test:scss && npm run test:css && npm run test:tailwind"
+    "test:vue:tw": "stylelint _tests_/tw.vue --config tw.js",
+    "test:vue:scss": "stylelint _tests_/scss.vue --config scss.js",
+    "test:vue": "stylelint _tests_/index.vue --config index.js",
+    "test:tw": "stylelint _tests_/*.scss --config tw.js",
+    "test:scss": "stylelint _tests_/*.scss --config scss.js",
+    "test:css": "stylelint _tests_/*.css --config index.js",
+    "test": "npm run test:scss && npm run test:css && npm run test:tw"
   },
   "dependencies": {
     "postcss-scss": "^4.0.4",
