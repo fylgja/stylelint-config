@@ -6,16 +6,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [5.0.0] - 2022-11-27
 ### Added
-- Support for Tailwind specific syntax
-- Support for Vue specific syntax
+- Support for Tailwind specific syntax, with new extend option
+- Support for inline styles with `stylelint-config-html`
 
 ### Changed
 - Split rules from export bundles,
   each rule is now in the rules folder and extended in the options offered in the root of this project,
   It is now easier to build your own config based on these rules
-- Dropped `at-rule-no-unknown` for default,
-  for custom PostCSS rules use your own custom rules after this extend
+- Dropped `at-rule-no-unknown` for default
 
 ## [4.2.1] - 2022-11-24
 ### Changed
