@@ -100,7 +100,7 @@ We have added the plugin [stylelint-config-html](https://github.com/ota-meshi/st
 These rules are part of each other options,
 and automatically used if the file type is vue.
 
-Use any of the **extends** options mention above and this will alos work with Vue.
+Use any of the **extends** options mention above and this will also work with Vue.
 
 <!-- [For more infomation checkout the Vue Doc on fylgja.dev.](https://fylgja.dev/components/stylelint-config/vue/) -->
 
