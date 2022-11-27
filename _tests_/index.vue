@@ -15,7 +15,7 @@ export default {
 <style>
 .order-example {
     /* var's/special setters */
-    --color-theme: hsl(270deg 50% 40%);
+    --color-theme: hsl(270 50% 40%);
     content: attr();
     counter-reset: section;
     counter-increment: section;
