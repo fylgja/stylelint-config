@@ -9,15 +9,22 @@ const twFunctions = [
   "screen",
 ];
 
-// Tailwind uses the same logic as any post processor for the syntax,
-// so where reusing the SCSS syntax for any rules
 module.exports = {
-  customSyntax: "postcss-scss",
-  plugins: ["stylelint-scss"],
   rules: {
-    "at-rule-no-unknown": null,
-    "function-no-unknown": null,
-    "scss/function-no-unknown": [true, { ignoreFunctions: ["theme"] }],
-    "scss/at-rule-no-unknown": [true, { ignoreAtRules: twFunctions }],
+    "at-rule-no-unknown": [true, { ignoreAtRules: twFunctions }],
+    "function-no-unknown": [true, { ignoreFunctions: ["theme"] }],
   },
+  overrides: [
+    {
+      files: ["*.scss", "**/*.scss"],
+      customSyntax: "postcss-scss",
+      plugins: ["stylelint-scss"],
+      rules: {
+        "at-rule-no-unknown": null,
+        "function-no-unknown": null,
+        "scss/at-rule-no-unknown": [true, { ignoreAtRules: twFunctions }],
+        "scss/function-no-unknown": [true, { ignoreFunctions: ["theme"] }],
+      },
+    },
+  ],
 };
