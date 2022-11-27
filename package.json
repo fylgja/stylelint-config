@@ -22,6 +22,7 @@
     "vue/*.js"
   ],
   "scripts": {
+    "test:html": "stylelint _tests_/*.html --config index.js",
     "test:vue:tailwind": "stylelint _tests_/tailwind.vue --config tailwind.js",
     "test:vue:scss": "stylelint _tests_/scss.vue --config scss.js",
     "test:vue:css": "stylelint _tests_/index.vue --config index.js",
