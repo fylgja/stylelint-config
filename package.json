@@ -18,19 +18,13 @@
   "unpkg": "index.json",
   "files": [
     "*.js",
-    "rules/*.js",
-    "vue/*.js"
+    "rules/*.js"
   ],
   "scripts": {
-    "test:html": "stylelint _tests_/*.html --config index.js",
-    "test:vue:tailwind": "stylelint _tests_/tailwind.vue --config tailwind.js",
-    "test:vue:scss": "stylelint _tests_/scss.vue --config scss.js",
-    "test:vue:css": "stylelint _tests_/index.vue --config index.js",
-    "test:vue": "npm run test:vue:tailwind && npm run test:vue:scss && npm run test:vue:css",
-    "test:tailwind": "stylelint _tests_/*.scss --config tailwind.js",
-    "test:scss": "stylelint _tests_/*.scss --config scss.js",
-    "test:css": "stylelint _tests_/*.css --config index.js",
-    "test": "npm run test:css && npm run test:scss && npm run test:tailwind && npm run test:vue"
+    "test:tailwind": "stylelint _tests_/tailwind.css --config tailwind.js",
+    "test:scss": "stylelint _tests_/index.scss --config scss.js",
+    "test:css": "stylelint _tests_/index.{css,html,vue} --config index.js",
+    "test": "npm run test:css && npm run test:scss && npm run test:tailwind"
   },
   "dependencies": {
     "postcss-html": "^1.5.0",

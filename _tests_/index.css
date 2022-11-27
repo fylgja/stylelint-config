@@ -1,6 +1,6 @@
 .order-example {
     /* var's/special setters */
-    --color-theme: rebeccapurple;
+    --color-theme: hsl(270 50% 40%);
     content: attr();
     counter-reset: section;
     counter-increment: section;

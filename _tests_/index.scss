@@ -9,7 +9,7 @@ $bg: rgba(#ddd, 0.3) !default;
     @include use-mixin;
 
     /* var's/special setters */
-    --color-theme: rebeccapurple;
+    --color-theme: hsl(270 50% 40%);
     --#{$var-name}: "value";
     content: attr();
     counter-reset: section;

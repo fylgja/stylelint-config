@@ -1,8 +1,8 @@
 const baseRules = [
   "stylelint-config-standard",
   "./rules/default",
-  "./rules/scss",
   "./rules/tailwind",
+  "stylelint-config-html",
 ];
 
 module.exports = {

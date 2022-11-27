@@ -1,15 +1,21 @@
-<script setup>
-console.log("Hello World!");
+<script>
+export default {
+    data() {
+        return {
+            greeting: "Hello World!",
+        };
+    },
+};
 </script>
 
 <template>
-    <p style="color: rebeccapurple">Hello there</p>
+    <p class="greeting">{{ greeting }}</p>
 </template>
 
 <style>
 .order-example {
     /* var's/special setters */
-    --color-theme: rebeccapurple;
+    --color-theme: hsl(270deg 50% 40%);
     content: attr();
     counter-reset: section;
     counter-increment: section;

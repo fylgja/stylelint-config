@@ -2,6 +2,7 @@ const baseRules = [
   "stylelint-config-standard",
   "./rules/default",
   "./rules/scss",
+  "stylelint-config-html",
 ];
 
 module.exports = {

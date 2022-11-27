@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .card {
+        @apply bg-white shadow-lg py-6 px-4;
+        color: theme("colors.gray.800");
+
+        @screen md {
+            @apply py-8 px-6;
+        }
+    }
+}
