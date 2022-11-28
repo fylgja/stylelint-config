@@ -13,6 +13,7 @@ module.exports = {
   rules: {
     "at-rule-no-unknown": [true, { ignoreAtRules: twFunctions }],
     "function-no-unknown": [true, { ignoreFunctions: ["theme"] }],
+    "max-line-length": null,
   },
   overrides: [
     {
@@ -22,6 +23,7 @@ module.exports = {
       rules: {
         "at-rule-no-unknown": null,
         "function-no-unknown": null,
+        "max-line-length": null,
         "scss/at-rule-no-unknown": [true, { ignoreAtRules: twFunctions }],
         "scss/function-no-unknown": [true, { ignoreFunctions: ["theme"] }],
       },
