@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [5.0.1] - 2022-11-28
+### Fixed
+- Line length rule on Tailwind by unsetting it
+
 ## [5.0.0] - 2022-11-27
 ### Added
 - Support for Tailwind specific syntax, with new extend option
