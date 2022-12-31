@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [5.0.2] - 2022-12-31
+### Added
+- `stylelint-ignore` to ignorePattern for `max-line-length`
+
+### Fixed
+- `value-no-vendor-prefix` add missing ignores from [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard)
+
 ## [5.0.1] - 2022-11-28
 ### Fixed
 - Line length rule on Tailwind by unsetting it

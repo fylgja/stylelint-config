@@ -6,7 +6,7 @@ module.exports = {
       {
         except: ["blockless-after-same-name-blockless", "first-nested"],
         ignore: ["after-comment", "inside-block"],
-        ignoreAtRules: ["import", "if", "else"],
+        ignoreAtRules: ["import", "if", "else", "when"],
       },
     ],
     "at-rule-no-vendor-prefix": true,
@@ -48,14 +48,16 @@ module.exports = {
       true,
       { severity: "warning" },
     ],
-    "function-name-case": ["lower", { ignoreFunctions: ["/^get.*$/"] }],
     "function-url-no-scheme-relative": true,
     "hue-degree-notation": "number",
     indentation: 4,
     "import-notation": null,
     "max-line-length": [
       80,
-      { ignorePattern: ["/https?://[0-9,a-z]*.*/"], severity: "warning" },
+      {
+        ignorePattern: ["/stylelint-ignore/", "/https?://[0-9,a-z]*.*/"],
+        severity: "warning",
+      },
     ],
     "max-nesting-depth": 5,
     "media-feature-name-no-unknown": [true, { severity: "warning" }],
@@ -74,11 +76,17 @@ module.exports = {
     ],
     "rule-empty-line-before": [
       "always-multi-line",
-      { except: ["first-nested"], ignore: ["after-comment", "inside-block"] },
+      {
+        except: ["first-nested"],
+        ignore: ["after-comment", "inside-block"],
+      },
     ],
     "selector-class-pattern": [
       "^(?:[a-z]|-)([a-z0-9]*)(-[a-z0-9]+)*$",
-      { message: "Expected class selector to be kebab-case" },
+      {
+        message: (selector) =>
+          `Expected class selector "${selector}" to be kebab-case`,
+      },
     ],
     "selector-list-comma-newline-before": "never-multi-line",
     "selector-list-comma-space-after": "always-single-line",
@@ -93,6 +101,12 @@ module.exports = {
     "value-keyword-case": ["lower", { ignoreProperties: ["/family/"] }],
     "value-list-comma-newline-after": null,
     "value-list-comma-newline-before": "never-multi-line",
-    "value-no-vendor-prefix": [true, { ignoreValues: ["tap-highlight-color"] }],
+    "value-no-vendor-prefix": [
+      true,
+      {
+        // `-webkit-box` is allowed as standard. See https://www.w3.org/TR/css-overflow-3/#webkit-line-clamp
+        ignoreValues: ["box", "inline-box", "tap-highlight-color"],
+      },
+    ],
   },
 };
