@@ -1,6 +1,6 @@
 # Fylgja stylelint-config
 
-[![NPM version](https://img.shields.io/npm/v/@fylgja/stylelint-config.svg)](https://www.npmjs.org/package/@fylgja/stylelint-config)
+[![NPM version](https://img.shields.io/npm/v/@fylgja/stylelint-config.svg?style=flat-square)](https://www.npmjs.org/package/@fylgja/stylelint-config)
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/fylgja/stylelint-config/test.yml?branch=main&color=%2343a047&style=flat-square)](https://github.com/fylgja/stylelint-config/actions/workflows/test.yml)
 [![License](https://img.shields.io/github/license/fylgja/stylelint-config?color=%23234&style=flat-square)](/LICENSE)
 

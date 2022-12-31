@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `stylelint-ignore` to ignorePattern for `max-line-length`
 
 ### Fixed
+- Small docs issues
 - `value-no-vendor-prefix` add missing ignores from [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard)
 
 ## [5.0.1] - 2022-11-28
