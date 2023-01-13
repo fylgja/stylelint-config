@@ -20,7 +20,6 @@ module.exports = {
       "always",
       { ignoreAtRules: ["if", "else", "when"] },
     ],
-    "color-function-notation": null,
     "color-hex-case": [
       "lower",
       { message: "Lowercase letters are easier to distinguish from numbers" },
