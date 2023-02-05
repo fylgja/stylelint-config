@@ -1,8 +1,8 @@
 {
   "name": "@fylgja/stylelint-config",
-  "version": "5.0.2",
+  "version": "5.0.3",
   "description": "Sharable stylelint config used by Fylgja packages",
-  "homepage": "https://getfylgja.com/",
+  "homepage": "https://fylgja.dev/",
   "repository": "https://github.com/fylgja/stylelint-config",
   "bugs": "https://github.com/fylgja/stylelint-config/issues",
   "author": "Fylgja",
@@ -16,7 +16,13 @@
   ],
   "main": "index.js",
   "unpkg": "index.json",
-  "files": ["*.js", "rules/*.js"],
+  "files": [
+    "*.js",
+    "rules/*.js"
+  ],
+  "engines": {
+    "node": ">=14.0"
+  },
   "scripts": {
     "test:tailwind": "stylelint _tests_/tailwind.css --config tailwind.js",
     "test:scss": "stylelint _tests_/index.scss --config scss.js",
@@ -24,16 +30,19 @@
     "test": "npm run test:css && npm run test:scss && npm run test:tailwind"
   },
   "dependencies": {
-    "postcss-html": "^1.5.0",
-    "postcss-scss": "^4.0.4",
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-standard": "^29.0.0",
     "stylelint-scss": "^4.3.0"
   },
   "devDependencies": {
+    "postcss-html": "^1.5.0",
+    "postcss-scss": "^4.0.4",
     "stylelint": "^14.15.0"
   },
   "peerDependencies": {
+    "postcss": "^8.4.19",
+    "postcss-html": "^1.5.0",
+    "postcss-scss": "^4.0.0",
     "stylelint": "^14.14.0"
   }
 }
