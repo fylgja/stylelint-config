@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - This makes it easier maintain this part of our own rules
   - The defaults are more inline with ours compared to a few years ago
   - We still have some rules set in our onw rules in `./rules/scss.js`
+- Dropped node 14 support, node 16 or higher is now required
 
 ### Removed
 - The import options for `scss` and `tailwind`, in favour for 1 import
