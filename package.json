@@ -1,6 +1,6 @@
 {
   "name": "@fylgja/stylelint-config",
-  "version": "5.0.3",
+  "version": "6.0.0",
   "description": "Sharable stylelint config used by Fylgja packages",
   "homepage": "https://fylgja.dev/",
   "repository": {
@@ -24,7 +24,7 @@
     "rules/*.js"
   ],
   "engines": {
-    "node": ">=14.0"
+    "node": ">=16.0"
   },
   "scripts": {
     "test": "stylelint _tests_"

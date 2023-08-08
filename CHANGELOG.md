@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [6.0.0] - 2023-08-08
 ### Added
 - Support for Astro and Svelte
 - Better tests for each specific language difference compared to our default rules
