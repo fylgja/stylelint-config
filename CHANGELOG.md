@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Better tests for each specific language difference compared to our default rules
+
 ### Removed
 - The import options for `scss` and `tailwind`, in favour for 1 import
   - This import will check the file type and use the right syntax

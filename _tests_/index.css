@@ -1,3 +1,5 @@
+@import url("./import.css") layer(test);
+
 .order-example {
     /* var's/special setters */
     --color-theme: hsl(270 50% 40%);
@@ -30,15 +32,15 @@
     margin: auto;
     padding: 0;
     border-radius: 50%;
-    border: 1px solid currentcolor;
+    border: 1px solid currentColor;
     box-shadow: 0 0 0 #fff2;
     outline: none;
 
     /* Visual */
     background-color: #eee;
     color: #333;
-    fill: currentcolor; /* svg */
-    stroke: currentcolor; /* svg */
+    fill: currentColor; /* svg */
+    stroke: currentColor; /* svg */
 
     /* Typographic */
     font-family: system-ui, sans-serif;
@@ -71,6 +73,7 @@
     from {
         transform: scaleX(1);
     }
+
     to {
         transform: scaleX(1.5);
     }
