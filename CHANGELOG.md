@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Removed
+- The import options for `scss` and `tailwind`, in favour for 1 import
+  - This import will check the file type and use the right syntax
+  - This removes the need to import the right config for a specific language
+
 ## [5.0.3] - 2023-02-05
 ### Changed
 - Set `color-function-notation`, to `modern`, closes #36
