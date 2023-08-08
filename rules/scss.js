@@ -1,53 +1,22 @@
+const postcssScss = require("postcss-scss");
+
 module.exports = {
-  customSyntax: "postcss-scss",
+  customSyntax: postcssScss,
   plugins: ["stylelint-scss"],
   rules: {
-    "annotation-no-unknown": [
-      true,
-      { ignoreAnnotations: ["default", "global"] },
-    ],
     "at-rule-empty-line-before": [
       "always",
       {
         except: ["blockless-after-same-name-blockless", "first-nested"],
-        ignore: ["after-comment", "inside-block"],
-        ignoreAtRules: ["use", "forward", "import", "if", "else"],
+        ignore: ["after-comment"],
+        ignoreAtRules: ["import", "if", "else"],
       },
     ],
-    "at-rule-no-unknown": null,
-    "comment-no-empty": null,
-    "custom-property-pattern": null,
-    "function-no-unknown": null,
-    "no-invalid-position-at-import-rule": [
-      true,
-      { ignoreAtRules: ["use", "forward"] },
-    ],
-    "scss/at-else-closing-brace-newline-after": "always-last-in-chain",
-    "scss/at-else-closing-brace-space-after": "always-intermediate",
-    "scss/at-else-empty-line-before": "never",
-    "scss/at-else-if-parentheses-space-before": "always",
-    "scss/at-extend-no-missing-placeholder": true,
-    "scss/at-function-parentheses-space-before": "never",
-    "scss/at-if-closing-brace-newline-after": "always-last-in-chain",
-    "scss/at-if-closing-brace-space-after": "always-intermediate",
-    "scss/at-if-no-null": true,
-    "scss/at-import-no-partial-leading-underscore": true,
-    "scss/at-mixin-argumentless-call-parentheses": "never",
-    "scss/at-mixin-parentheses-space-before": "never",
-    "scss/at-rule-no-unknown": true,
-    "scss/comment-no-empty": [true, { severity: "warning" }],
-    "scss/declaration-nested-properties-no-divided-groups": true,
-    "scss/dollar-variable-colon-newline-after": null,
+    "scss/dollar-variable-colon-newline-after": null, // Allow multiline
     "scss/dollar-variable-colon-space-after": "always-single-line",
-    "scss/dollar-variable-colon-space-before": "never",
-    "scss/dollar-variable-no-missing-interpolation": true,
-    "scss/double-slash-comment-whitespace-inside": "always",
     "scss/function-color-relative": [
       true,
-      {
-        severity: "warning",
-        message: "Use the new scss color functions instead!",
-      },
+      { message: "Use the new scss color functions instead!" },
     ],
     "scss/media-feature-value-dollar-variable": [
       "always",
@@ -56,11 +25,7 @@ module.exports = {
         ignore: ["keywords"],
       },
     ],
-    "scss/no-duplicate-mixins": true,
-    "scss/no-global-function-names": null,
-    "scss/operator-no-newline-after": null,
-    "scss/operator-no-newline-before": true,
-    "scss/operator-no-unspaced": null,
+    "scss/operator-no-newline-after": null, // Allow multiline
     "scss/selector-no-redundant-nesting-selector": true,
   },
 };

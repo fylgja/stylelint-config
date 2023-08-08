@@ -1,31 +1,23 @@
-const twFunctions = [
-  "tailwind",
-  "apply",
-  "layer",
-  "config",
-  /** TailwindCSS v2 */
-  "variants",
-  "responsive",
-  "screen",
-];
+const postcssScss = require("postcss-scss");
+const ignoreAtRules = ["tailwind", "apply", "layer", "screen", "config"];
+const ignoreFunctions = ["theme"];
 
 module.exports = {
   rules: {
-    "at-rule-no-unknown": [true, { ignoreAtRules: twFunctions }],
-    "function-no-unknown": [true, { ignoreFunctions: ["theme"] }],
-    "max-line-length": null,
+    "at-rule-no-unknown": [true, { ignoreAtRules }],
+    "function-no-unknown": [true, { ignoreFunctions }],
+    "import-notation": "string",
   },
   overrides: [
     {
       files: ["*.scss", "**/*.scss"],
-      customSyntax: "postcss-scss",
+      customSyntax: postcssScss,
       plugins: ["stylelint-scss"],
       rules: {
         "at-rule-no-unknown": null,
         "function-no-unknown": null,
-        "max-line-length": null,
-        "scss/at-rule-no-unknown": [true, { ignoreAtRules: twFunctions }],
-        "scss/function-no-unknown": [true, { ignoreFunctions: ["theme"] }],
+        "scss/at-rule-no-unknown": [true, { ignoreAtRules }],
+        "scss/function-no-unknown": [true, { ignoreFunctions }],
       },
     },
   ],

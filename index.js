@@ -1,15 +1,40 @@
-const baseRules = [
-  "stylelint-config-standard",
-  "./rules/default",
-  "stylelint-config-html",
-];
-
 module.exports = {
-  extends: baseRules,
+  extends: [
+    "stylelint-config-standard",
+    "stylelint-config-html",
+    "./rules/default",
+  ],
   overrides: [
     {
+      files: ["*.scss", "**/*.scss"],
+      extends: [
+        "stylelint-config-standard-scss",
+        "./rules/default",
+        "./rules/scss",
+      ],
+    },
+    {
+      files: ["*.astro", "**/*.astro"],
+      extends: ["./rules/astro"],
+    },
+    {
       files: ["*.vue", "**/*.vue"],
-      extends: [...baseRules, "./rules/vue"],
+      extends: ["./rules/vue"],
+    },
+    {
+      files: ["*.svelte", "**/*.svelte"],
+      extends: ["./rules/svelte"],
+    },
+    {
+      files: [
+        "tailwind*.{css,scss}",
+        "tailwind/*.{css,scss}",
+        "tailwind/**/*.{css,scss}",
+        "**/tailwind*.{css,scss}",
+        "**/tailwind/*.{css,scss}",
+        "**/tailwind/**/*.{css,scss}",
+      ],
+      extends: ["./rules/tailwind"],
     },
   ],
 };

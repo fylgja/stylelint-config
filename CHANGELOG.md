@@ -10,6 +10,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Support for Astro and Svelte
 - Better tests for each specific language difference compared to our default rules
 
+### Changed
+- Updated stylelint to version v15, closes #39,
+  this update [droppes stylistic rules](https://stylelint.io/migration-guide/to-15) that are deprecated by stylelint
+- Updated the and cleaned the rules for TailwindCSS and Vue
+- Replaced our own defaults for Scss with [stylelint-config-standard-scss](https://github.com/stylelint-scss/stylelint-config-standard-scss)
+  - This makes it easier maintain this part of our own rules
+  - The defaults are more inline with ours compared to a few years ago
+  - We still have some rules set in our onw rules in `./rules/scss.js`
+
 ### Removed
 - The import options for `scss` and `tailwind`, in favour for 1 import
   - This import will check the file type and use the right syntax
