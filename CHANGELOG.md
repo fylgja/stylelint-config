@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Support for camelCase in custom media query names
+- Support for camelCase in custom properties in all languages, not just Astro
+
+### Fixed
+- Support for private custom properties, e.g. `--_custom`
+
 ## [6.0.0] - 2023-08-08
 ### Added
 - Support for Astro and Svelte
@@ -18,7 +25,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Replaced our own defaults for Scss with [stylelint-config-standard-scss](https://github.com/stylelint-scss/stylelint-config-standard-scss)
   - This makes it easier maintain this part of our own rules
   - The defaults are more inline with ours compared to a few years ago
-  - We still have some rules set in our onw rules in `./rules/scss.js`
+  - We still have some rules set in our own rules in `./rules/scss.js`
 - Dropped node 14 support, node 16 or higher is now required
 
 ### Removed

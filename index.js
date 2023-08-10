@@ -14,10 +14,6 @@ module.exports = {
       ],
     },
     {
-      files: ["*.astro", "**/*.astro"],
-      extends: ["./rules/astro"],
-    },
-    {
       files: ["*.vue", "**/*.vue"],
       extends: ["./rules/vue"],
     },

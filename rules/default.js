@@ -1,6 +1,20 @@
 module.exports = {
   rules: {
     "custom-property-empty-line-before": "never",
+    "custom-property-pattern": [
+      "^(?:[a-z]|_)([a-z0-9]*)+|[a-z]+[A-Z]+[a-z]*$",
+      {
+        message: (val) =>
+          `Expected custom property "${val}" to be kebab-case or camelCase`,
+      },
+    ],
+    "custom-media-pattern": [
+      "^([a-z0-9]*)+|[a-z]+[A-Z]+[a-z]*$",
+      {
+        message: (val) =>
+          `Expected custom media "${val}" to be kebab-case or camelCase`,
+      },
+    ],
     "declaration-empty-line-before": "never",
     "declaration-no-important": true,
     "font-family-no-duplicate-names": [true, { severity: "warning" }],
