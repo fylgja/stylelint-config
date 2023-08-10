@@ -1,6 +1,6 @@
 {
   "name": "@fylgja/stylelint-config",
-  "version": "6.0.0",
+  "version": "6.0.1",
   "description": "Sharable stylelint config used by Fylgja packages",
   "homepage": "https://fylgja.dev/",
   "repository": {

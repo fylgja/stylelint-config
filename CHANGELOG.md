@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [6.0.1] - 2023-08-10
 ### Added
 - Support for camelCase in custom media query names
 - Support for camelCase in custom properties in all languages, not just Astro
