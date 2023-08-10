@@ -25,6 +25,8 @@ module.exports = {
     "function-url-no-scheme-relative": true,
     "hue-degree-notation": "number",
     "max-nesting-depth": 5,
+    // Disabled, until Browser support for [media range](https://caniuse.com/?search=media%20range) is at a minimal of 2 mayor versions
+    "media-feature-range-notation": null,
     "media-feature-name-no-unknown": [true, { severity: "warning" }],
     "no-descending-specificity": [true, { severity: "warning" }],
     "property-no-vendor-prefix": [

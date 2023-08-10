@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [6.0.2] - 2023-08-10
+### Fixed
+- Unset rule `media-feature-range-notation`, closes #47
+  until support for [media range](https://caniuse.com/?search=media%20range) is at a minimal of 2 mayor browser versions
+
 ## [6.0.1] - 2023-08-10
 ### Added
 - Support for camelCase in custom media query names
