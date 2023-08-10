@@ -40,8 +40,7 @@ module.exports = {
     "selector-class-pattern": [
       "^(?:[a-z]|-)([a-z0-9]*)(-[a-z0-9]+)*$",
       {
-        message: (selector) =>
-          `Expected class selector "${selector}" to be kebab-case`,
+        message: (val) => `Expected class selector "${val}" to be kebab-case`,
       },
     ],
     "selector-max-attribute": 2,
@@ -55,7 +54,10 @@ module.exports = {
       true,
       { ignorePseudoClasses: ["global"] },
     ],
-    "value-keyword-case": ["lower", { camelCaseSvgKeywords: true }],
+    "value-keyword-case": [
+      "lower",
+      { ignoreFunctions: ["local"], ignoreProperties: ["/family/"] },
+    ],
     "value-no-vendor-prefix": [
       true,
       {

@@ -13,6 +13,11 @@ export default {
 </template>
 
 <style>
+@font-face {
+    font-family: Fylgja;
+    src: local(Fylgja), url("fylgja.woff2") format("woff2");
+}
+
 :global(.foo),
 ::v-deep(.foo),
 ::v-slotted(.foo),

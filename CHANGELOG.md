@@ -14,7 +14,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - scss rules conflicting with our Fylgja styleguide
   - dollar variables should be allowed after a comment
   - double slash comments should be allow between properties
+- Broke the `value-keyword-case` rule compare to previous versions, for font family names
+  - added back rule to ignore value case in variables named `family`
+  - added rule to ignore value case in functions named `local()`, used in `@font-face`
 - Support for private custom properties, e.g. `--_custom`
+
+### Removed
+- `camelCaseSvgKeywords` in `value-keyword-case` rule to match previous versions,
+  also the lower case version should be used as per CSS4 Color spec, e.g. `currentcolor`
 
 ## [6.0.0] - 2023-08-08
 ### Added

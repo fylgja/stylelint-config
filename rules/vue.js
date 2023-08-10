@@ -1,4 +1,5 @@
 const defaultRules = require("./default");
+const valueKeywordCaseOptions = defaultRules.rules["value-keyword-case"][1];
 
 module.exports = {
   customSyntax: "postcss-html",
@@ -7,8 +8,8 @@ module.exports = {
     "value-keyword-case": [
       "lower",
       {
-        ...defaultRules.rules["value-keyword-case"][1],
-        ignoreFunctions: ["v-bind"],
+        ...valueKeywordCaseOptions,
+        ignoreFunctions: [...valueKeywordCaseOptions.ignoreFunctions, "v-bind"],
       },
     ],
     "selector-pseudo-class-no-unknown": [

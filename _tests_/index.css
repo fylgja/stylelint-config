@@ -3,6 +3,11 @@
 @custom-media --lg (min-width: 1024px);
 @custom-media --lgMax (max-width: 1023px);
 
+@font-face {
+    font-family: Fylgja;
+    src: local(Fylgja), url("fylgja.woff2") format("woff2");
+}
+
 .order-example {
     /* var's/special setters */
     --color-theme: hsl(270 50% 40%);
@@ -36,18 +41,19 @@
     margin: auto;
     padding: 0;
     border-radius: 50%;
-    border: 1px solid currentColor;
+    border: 1px solid currentcolor;
     box-shadow: 0 0 0 #fff2;
     outline: none;
 
     /* Visual */
     background-color: #eee;
     color: #333;
-    fill: currentColor; /* svg */
-    stroke: currentColor; /* svg */
+    fill: currentcolor;
+    stroke: currentcolor;
 
     /* Typographic */
-    font-family: system-ui, sans-serif;
+    font-family: system-ui, Arial, sans-serif;
+    font-language-override: "ENG";
     font-size: 1em;
     font-weight: 500;
     text-align: center;
