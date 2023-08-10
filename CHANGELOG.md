@@ -11,6 +11,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Support for camelCase in custom properties in all languages, not just Astro
 
 ### Fixed
+- scss rules conflicting with our Fylgja styleguide
+  - dollar variables should be allowed after a comment
+  - double slash comments should be allow between properties
 - Support for private custom properties, e.g. `--_custom`
 
 ## [6.0.0] - 2023-08-08

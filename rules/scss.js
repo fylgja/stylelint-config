@@ -18,6 +18,24 @@ module.exports = {
       true,
       { message: "Use the new scss color functions instead!" },
     ],
+    "scss/dollar-variable-empty-line-before": [
+      "always",
+      {
+        except: ["after-dollar-variable", "first-nested"],
+        ignore: [
+          "after-comment",
+          "after-dollar-variable",
+          "inside-single-line-block",
+        ],
+      },
+    ],
+    "scss/double-slash-comment-empty-line-before": [
+      "always",
+      {
+        except: ["first-nested"],
+        ignore: ["between-comments", "inside-block", "stylelint-commands"],
+      },
+    ],
     "scss/media-feature-value-dollar-variable": [
       "always",
       {
