@@ -4,7 +4,10 @@
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/fylgja/stylelint-config/test.yml?branch=main&color=%2343a047&style=flat-square)](https://github.com/fylgja/stylelint-config/actions/workflows/test.yml)
 [![License](https://img.shields.io/github/license/fylgja/stylelint-config?color=%23234&style=flat-square)](/LICENSE)
 
-A sharable stylelint config object that enforces Fylgja's CSS rules.
+Fylgja uses an opinionated Stylelint config to enforce its CSS rules across all of its projects.
+
+This config promotes consistency and readability in Fylgja's CSS code,
+and helps to prevent errors and make the code easier to maintain.
 
 ## Installation
 
@@ -14,7 +17,7 @@ npm install @fylgja/stylelint-config --save-dev
 
 ## Usage
 
-If you've installed @fylgja/stylelint-config, just set your stylelint config to:
+Set your Stylelint config to:
 
 ```json
 {
@@ -22,28 +25,66 @@ If you've installed @fylgja/stylelint-config, just set your stylelint config to:
 }
 ```
 
-## Extending
+## Extending the config
 
-Simply add a `"rules"` key to your config,
-then add your overrides and additions there.
+For advanced customization, you can extend the configuration by including a "rules" key in your settings.
+
+This empowers you to either modify existing rules or introduce new ones.
+
+For instance, if you wish to disable the selector-class-pattern rule,
+incorporate the following code into your configuration:
 
 ```json
 {
   "extends": "@fylgja/stylelint-config",
   "rules": {
-    "rule-empty-line-before": [
-        "always-multi-line", {
-            "except": ["first-nested"],
-            "ignore": ["after-comment"]
-        }
-    ],
+    "selector-class-pattern": null
   }
 }
 ```
 
+## Syntax Support
+
+Our configuration is intelligently tailored based on the file type,
+ensuring the appropriate rules are applied automatically.
+
+If your file is written in SCSS,
+the SCSS rules will be seamlessly integrated alongside our default rules.
+
+### SCSS
+
+The Fylgja stylelint-config extends support for SCSS by incorporating [stylelint scss](https://github.com/stylelint-scss/stylelint-scss) and its standard rules.
+
+While some rules are customized to align with our style guide,
+the majority remains the same.
+
+### TailwindCSS
+
+Adds full compatibility with [TailwindCSS](https://tailwindcss.com/),
+enabling you to freely utilize `theme()` and at-rules directly from TailwindCSS.
+
+### Svelte
+
+Adds full compatibility with [inline styles in Svelte](https://svelte.dev/docs/svelte-components#style),
+ensuring seamless integration.
+
+### Vue
+
+Adds full compatibility with [inline styles in Vue](https://vuejs.org/api/sfc-css-features.html),
+ensuring seamless integration.
+
+### HTML, PHP, Astro, and More
+
+The configuration effortlessly handles inline styles within HTML-based languages.
+
+No additional rules are necessary,
+and we've even incorporated support for camelCase custom properties without the need for extra directives when working with [Astro](https://docs.astro.build/en/guides/styling/#css-variables).
+
 ## Rules
 
-For information on what each rule does and what is set,
-see the [Fylgja stylelint-config docs, on fylgja.dev](https://fylgja.dev/components/stylelint-config/#rules)
+To gain deeper insights into the behavior of each rule and its associated settings, refer to the following resources:
 
-All rules are base on the [stylelint-config-recommended](https://github.com/stylelint/stylelint-config-standard). You should also checkout the rules set there.
+- [stylelint.io Rule Documentation](https://stylelint.io/user-guide/rules)
+- [stylelint-scss Rule Documentation](https://github.com/stylelint-scss/stylelint-scss#list-of-rules)
+
+Furthermore, the Fylgja configuration seamlessly integrates with inline styles through [stylelint-config-html](https://github.com/ota-meshi/stylelint-config-html), as mentioned above.
