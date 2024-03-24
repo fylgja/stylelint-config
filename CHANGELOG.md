@@ -6,14 +6,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [7.0.0] - 2024-03-24
+
 ### Added
 - Support for webc, liquid and nunjucks
 
-### Chnaged
+### Changed
 - Updated stylelint to version v16
 
 ### Removed
-- stylelint-config-html for our own solution with more html syntaxes
+- [stylelint-config-html](https://github.com/ota-meshi/stylelint-config-html) for our own solution with more html syntaxes
 
 ## [6.0.2] - 2023-08-10
 ### Fixed
