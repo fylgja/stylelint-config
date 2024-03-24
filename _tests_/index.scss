@@ -1,5 +1,5 @@
 @use "sass:color";
-@use "use" as *;
+@use "use" as helper;
 
 @import "./import.css";
 
@@ -7,7 +7,7 @@ $var-name: "prop" !default;
 $bg: rgba(#ddd, 0.3) !default;
 
 .scss-example {
-    @include use-mixin;
+    @include helper.use-mixin;
     --color-theme: hsl(270 50% 40%);
     --#{$var-name}: "value";
     color: 0 0 0 $bg;
