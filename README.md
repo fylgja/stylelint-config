@@ -86,5 +86,3 @@ To gain deeper insights into the behavior of each rule and its associated settin
 
 - [stylelint.io Rule Documentation](https://stylelint.io/user-guide/rules)
 - [stylelint-scss Rule Documentation](https://github.com/stylelint-scss/stylelint-scss#list-of-rules)
-
-Furthermore, the Fylgja configuration seamlessly integrates with inline styles through [stylelint-config-html](https://github.com/ota-meshi/stylelint-config-html), as mentioned above.
