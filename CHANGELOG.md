@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Chnaged
+- Updated stylelint to version v16
+
+### Removed
+- stylelint-config-html for our own solution with more html syntaxes
+
 ## [6.0.2] - 2023-08-10
 ### Fixed
 - Unset rule `media-feature-range-notation`, closes #47
