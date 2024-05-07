@@ -39,6 +39,7 @@ module.exports = {
         ],
       },
     ],
+    "selector-attribute-quotes": null,
     "selector-class-pattern": [
       "^(?:[a-z]|-)([a-z0-9]*)(-[a-z0-9]+)*$",
       {

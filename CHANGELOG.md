@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Allow selector attributes with or without quotes
+
 ## [7.0.0] - 2024-03-24
 
 ### Added
