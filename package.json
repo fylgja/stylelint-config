@@ -30,7 +30,7 @@
     "test": "stylelint _tests_"
   },
   "dependencies": {
-    "stylelint-config-standard-scss": "^13.0.0",
+    "stylelint-config-standard-scss": "^14.0.0",
     "stylelint-scss": "^6.2.1"
   },
   "devDependencies": {
