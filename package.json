@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "stylelint-config-standard-scss": "^14.0.0",
-    "stylelint-scss": "^6.2.1"
+    "stylelint-scss": "^7.0.0"
   },
   "devDependencies": {
     "postcss-html": "^1.6.0",
