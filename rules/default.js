@@ -1,72 +1,76 @@
 export default {
-  rules: {
-    "custom-property-empty-line-before": null, // Allow the spacing option to the user
-    "custom-property-pattern": [
-      "^(?:[a-z]|_)([a-z0-9]*)+|[a-z]+[A-Z]+[a-z]*$",
-      {
-        message: (val) =>
-          `Expected custom property "${val}" to be kebab-case or camelCase`,
-      },
-    ],
-    "custom-media-pattern": [
-      "^([a-z0-9]*)+|[a-z]+[A-Z]+[a-z]*$",
-      {
-        message: (val) =>
-          `Expected custom media "${val}" to be kebab-case or camelCase`,
-      },
-    ],
-    "declaration-empty-line-before": "never",
-    "declaration-property-value-no-unknown": null, // Sadly give false postives for many new CSS functions
-    "declaration-no-important": true,
-    "font-family-no-duplicate-names": [true, { severity: "warning" }],
-    "font-family-no-missing-generic-family-keyword": [
-      true,
-      { severity: "warning" },
-    ],
-    "function-url-no-scheme-relative": true,
-    "hue-degree-notation": "number",
-    "max-nesting-depth": 5,
-    "media-feature-name-no-unknown": [true, { severity: "warning" }],
-    "no-descending-specificity": null, // Sadly give false postives for some cases
-    "property-no-vendor-prefix": [
-      true,
-      {
-        ignoreProperties: [
-          "-webkit-appearance",
-          "-webkit-text-size-adjust",
-          "-webkit-tap-highlight-color",
-          "-webkit-box-orient",
-          "-webkit-line-clamp",
-        ],
-      },
-    ],
-    "selector-attribute-quotes": null,
-    "selector-class-pattern": [
-      "^(?:[a-z]|-)([a-z0-9]*)(-[a-z0-9]+)*$",
-      {
-        message: (val) => `Expected class selector "${val}" to be kebab-case`,
-      },
-    ],
-    "selector-max-attribute": 5,
-    "selector-max-class": 5,
-    "selector-max-compound-selectors": 5,
-    "selector-max-id": 2,
-    "selector-max-universal": 2,
-    "selector-no-qualifying-type": [true, { ignore: ["attribute", "class"] }],
-    "selector-pseudo-class-no-unknown": [
-      true,
-      { ignorePseudoClasses: ["global"] },
-    ],
-    "value-keyword-case": [
-      "lower",
-      { ignoreFunctions: ["local"], ignoreProperties: ["/family/"] },
-    ],
-    "value-no-vendor-prefix": [
-      true,
-      {
-        // `-webkit-box` is allowed as standard. See https://www.w3.org/TR/css-overflow-3/#webkit-line-clamp
-        ignoreValues: ["-webkit-box"],
-      },
-    ],
-  },
+	rules: {
+		"custom-property-empty-line-before": null, // Allow the spacing option to the user
+		"custom-property-pattern": [
+			"^(?:[a-z]|_)([a-z0-9]*)+|[a-z]+[A-Z]+[a-z]*$",
+			{
+				message: (val) =>
+					`Expected custom property "${val}" to be kebab-case or camelCase`,
+			},
+		],
+		"custom-media-pattern": [
+			"^([a-z0-9]*)+|[a-z]+[A-Z]+[a-z]*$",
+			{
+				message: (val) =>
+					`Expected custom media "${val}" to be kebab-case or camelCase`,
+			},
+		],
+		"declaration-empty-line-before": "never",
+		"declaration-property-value-no-unknown": null, // Sadly give false postives for many new CSS functions
+		"declaration-no-important": true,
+		"font-family-no-duplicate-names": [true, { severity: "warning" }],
+		"font-family-no-missing-generic-family-keyword": [
+			true,
+			{ severity: "warning" },
+		],
+		"function-url-no-scheme-relative": true,
+		"hue-degree-notation": "number",
+		"max-nesting-depth": 5,
+		"media-feature-name-no-unknown": [true, { severity: "warning" }],
+		"no-descending-specificity": null, // Sadly give false postives for some cases
+		"property-no-vendor-prefix": [
+			true,
+			{
+				ignoreProperties: [
+					"-webkit-appearance",
+					"-webkit-text-size-adjust",
+					"-webkit-tap-highlight-color",
+					"-webkit-box-orient",
+					"-webkit-line-clamp",
+				],
+			},
+		],
+		"selector-attribute-quotes": null,
+		"selector-class-pattern": [
+			"^(?:[a-z]|-)([a-z0-9]*)(-[a-z0-9]+)*$",
+			{
+				message: (val) =>
+					`Expected class selector "${val}" to be kebab-case`,
+			},
+		],
+		"selector-max-attribute": 5,
+		"selector-max-class": 5,
+		"selector-max-compound-selectors": 5,
+		"selector-max-id": 2,
+		"selector-max-universal": 2,
+		"selector-no-qualifying-type": [
+			true,
+			{ ignore: ["attribute", "class"] },
+		],
+		"selector-pseudo-class-no-unknown": [
+			true,
+			{ ignorePseudoClasses: ["global"] },
+		],
+		"value-keyword-case": [
+			"lower",
+			{ ignoreFunctions: ["local"], ignoreProperties: ["/family/"] },
+		],
+		"value-no-vendor-prefix": [
+			true,
+			{
+				// `-webkit-box` is allowed as standard. See https://www.w3.org/TR/css-overflow-3/#webkit-line-clamp
+				ignoreValues: ["-webkit-box"],
+			},
+		],
+	},
 };
