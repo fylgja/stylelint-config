@@ -1,6 +1,6 @@
 export default {
   rules: {
-    "custom-property-empty-line-before": "never",
+    "custom-property-empty-line-before": null, // Allow the spacing option to the user
     "custom-property-pattern": [
       "^(?:[a-z]|_)([a-z0-9]*)+|[a-z]+[A-Z]+[a-z]*$",
       {
