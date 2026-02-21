@@ -16,7 +16,9 @@
     "stylelint",
     "stylelint-config",
     "css linting",
-    "scss linting"
+    "scss linting",
+    "tailwind",
+    "astro"
   ],
   "main": "index.js",
   "unpkg": "index.json",
