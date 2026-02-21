@@ -1,3 +1,3 @@
 export default {
-  customSyntax: "postcss-html",
+	customSyntax: "postcss-html",
 };
