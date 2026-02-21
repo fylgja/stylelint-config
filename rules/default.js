@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   rules: {
     "custom-property-empty-line-before": "never",
     "custom-property-pattern": [
@@ -25,8 +25,6 @@ module.exports = {
     "function-url-no-scheme-relative": true,
     "hue-degree-notation": "number",
     "max-nesting-depth": 5,
-    // Disabled, until Browser support for [media range](https://caniuse.com/?search=media%20range) is at a minimal of 2 mayor versions
-    "media-feature-range-notation": null,
     "media-feature-name-no-unknown": [true, { severity: "warning" }],
     "no-descending-specificity": [true, { severity: "warning" }],
     "property-no-vendor-prefix": [
@@ -46,11 +44,11 @@ module.exports = {
         message: (val) => `Expected class selector "${val}" to be kebab-case`,
       },
     ],
-    "selector-max-attribute": 2,
-    "selector-max-class": 4,
-    "selector-max-compound-selectors": 4,
-    "selector-max-id": 1,
-    "selector-max-type": 2,
+    "selector-max-attribute": 3,
+    "selector-max-class": 5,
+    "selector-max-compound-selectors": 5,
+    "selector-max-id": 2,
+    "selector-max-type": 3,
     "selector-max-universal": 2,
     "selector-no-qualifying-type": [true, { ignore: ["attribute", "class"] }],
     "selector-pseudo-class-no-unknown": [
@@ -65,7 +63,11 @@ module.exports = {
       true,
       {
         // `-webkit-box` is allowed as standard. See https://www.w3.org/TR/css-overflow-3/#webkit-line-clamp
-        ignoreValues: ["box", "inline-box", "tap-highlight-color"],
+        ignoreValues: [
+          "-webkit-box",
+          "-webkit-tap-highlight-color",
+          "-webkit-text-size-adjust",
+        ],
       },
     ],
   },
