@@ -1,17 +1,15 @@
-<?php
+<?php $greeting = "hello there"; ?>
 
-$greeting = "hello there";
-
-?>
-
-<p class="greeting"><?= $greeting; ?></p>
+<p class="greeting">
+    <?= $greeting ?>
+</p>
 
 <style>
-  body {
-    margin: 0;
-  }
+    body {
+      margin: 0;
+    }
 
-  @keyframes my-animation-name {
-    /* code goes here */
-  }
+    @keyframes my-animation-name {
+        /* code goes here */
+    }
 </style>

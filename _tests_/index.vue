@@ -15,7 +15,9 @@ export default {
 <style>
 @font-face {
     font-family: Fylgja;
-    src: local(Fylgja), url("fylgja.woff2") format("woff2");
+    src:
+        local(Fylgja),
+        url("fylgja.woff2") format("woff2");
 }
 
 :global(.foo),
@@ -28,7 +30,7 @@ export default {
 }
 
 .bar {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     width: v-bind(camelCase);
 }
 </style>

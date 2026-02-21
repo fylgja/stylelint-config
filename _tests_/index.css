@@ -4,87 +4,98 @@
 @custom-media --lgMax (max-width: 1023px);
 
 @font-face {
-    font-family: Fylgja;
-    src: local(Fylgja), url("fylgja.woff2") format("woff2");
+	font-family: Fylgja;
+	src:
+		local(Fylgja),
+		url("fylgja.woff2") format("woff2");
 }
 
 .order-example {
-    /* var's/special setters */
-    --color-theme: hsl(270 50% 40%);
-    --_private: 0;
-    content: attr();
-    counter-reset: section;
-    counter-increment: section;
-    quotes: "“" "”" "‘" "’";
+	/* var's/special setters */
+	--color-theme: hsl(270 50% 40%);
+	--_private: 0;
+	content: attr();
+	counter-reset: section;
+	counter-increment: section;
+	quotes: "“" "”" "‘" "’";
 
-    /* Positioning */
-    box-sizing: border-box;
-    position: absolute;
-    right: 0;
+	/* Positioning */
+	box-sizing: border-box;
+	position: absolute;
+	right: 0;
 
-    /* Layout */
-    display: block;
-    float: left;
-    grid-column: span 2;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    table-layout: fixed;
+	/* Layout */
+	display: block;
+	float: left;
+	grid-column: span 2;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	table-layout: fixed;
 
-    /* Shape */
-    width: auto;
-    max-width: 100%;
-    min-width: 100%;
-    height: auto;
-    clip-path: circle(50%);
-    shape-outside: circle(50%);
-    margin: auto;
-    padding: 0;
-    border-radius: 50%;
-    border: 1px solid currentcolor;
-    box-shadow: 0 0 0 #fff2;
-    outline: none;
+	/* Shape */
+	width: auto;
+	max-width: 100%;
+	min-width: 100%;
+	height: auto;
+	clip-path: circle(50%);
+	shape-outside: circle(50%);
+	margin: auto;
+	padding: 0;
+	border-radius: 50%;
+	border: 1px solid currentcolor;
+	box-shadow: 0 0 0 #fff2;
+	outline: none;
 
-    /* Visual */
-    background-color: #eee;
-    color: #333;
-    fill: currentcolor;
-    stroke: currentcolor;
+	/* Visual */
+	background-color: #eee;
+	color: #333;
+	fill: currentcolor;
+	stroke: currentcolor;
 
-    /* Typographic */
-    font-family: system-ui, Arial, sans-serif;
-    font-language-override: "ENG";
-    font-size: 1em;
-    font-weight: 500;
-    text-align: center;
-    vertical-align: middle;
-    white-space: pre;
-    hyphens: auto;
-    overflow-wrap: break-word;
+	/* Typographic */
+	font-family: system-ui, Arial, sans-serif;
+	font-language-override: "ENG";
+	font-size: 1em;
+	font-weight: 500;
+	text-align: center;
+	vertical-align: middle;
+	white-space: pre;
+	hyphens: auto;
+	overflow-wrap: break-word;
 
-    /* Misc */
-    transform: scaleX(1);
-    opacity: 1;
-    animation: 3s infinite;
-    transition: transform 0.2s linear;
-    appearance: none;
-    overflow: visible;
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
+	/* Misc */
+	transform: scaleX(1);
+	opacity: 1;
+	animation: 3s infinite;
+	transition: transform 0.2s linear;
+	appearance: none;
+	overflow: visible;
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-text-size-adjust: none;
+}
+
+.line-clamp {
+	--line-count: 3;
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: var(--line-count);
 }
 
 /* Fylgja specific */
 .class.-with-modifier {
-    --var: var(--text, "yeah");
+	--var: var(--text, "yeah");
 }
 
 /* Animations */
 @keyframes foo {
-    from {
-        transform: scaleX(1);
-    }
+	from {
+		transform: scaleX(1);
+	}
 
-    to {
-        transform: scaleX(1.5);
-    }
+	to {
+		transform: scaleX(1.5);
+	}
 }

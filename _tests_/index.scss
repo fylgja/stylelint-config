@@ -7,20 +7,20 @@ $var-name: "prop" !default;
 $bg: rgba(#ddd, 0.3) !default;
 
 .scss-example {
-    @include helper.use-mixin;
-    --color-theme: hsl(270 50% 40%);
-    --#{$var-name}: "value";
-    color: 0 0 0 $bg;
+	@include helper.use-mixin;
+	--color-theme: hsl(270 50% 40%);
+	--#{$var-name}: "value";
+	color: 0 0 0 $bg;
 
-    @if $var-name {
-        // if true
-    } @else {
-        // if false
-    }
+	@if $var-name {
+		// if true
+	} @else {
+		// if false
+	}
 
-    @for $i from 1 through 3 {
-        ul:nth-child(3n + #{$i}) {
-            background-color: color.change($bg, $lightness: ($i * 5%));
-        }
-    }
+	@for $i from 1 through 3 {
+		ul:nth-child(3n + #{$i}) {
+			background-color: color.change($bg, $lightness: ($i * 5%));
+		}
+	}
 }

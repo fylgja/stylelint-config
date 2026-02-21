@@ -5,26 +5,26 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-    --brand: var(--color-blue-600);
+	--brand: var(--color-blue-600);
 }
 
 @custom-variant theme-midnight (&:where([data-theme="midnight"] *));
 
 @layer components {
-    .card {
-        @apply shadow-lg;
-        background-color: var(--bg-white);
-        padding-block: --spacing(6);
-        padding-inline: --spacing(4);
-        color: var(--color-gray-800);
+	.card {
+		@apply shadow-lg;
+		background-color: var(--bg-white);
+		padding-block: --spacing(6);
+		padding-inline: --spacing(4);
+		color: var(--color-gray-800);
 
-        @variant md {
-            padding-block: --spacing(8);
-            padding-inline: --spacing(6);
-        }
-    }
+		@variant md {
+			padding-block: --spacing(8);
+			padding-inline: --spacing(6);
+		}
+	}
 }
 
 @utility tab-4 {
-    tab-size: 4;
+	tab-size: 4;
 }
