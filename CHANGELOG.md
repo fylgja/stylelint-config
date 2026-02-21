@@ -23,7 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Updated stylelint to version v17
-- Updates some rules witht the stylelint update, see http://stylelint.io/migration-guide/to-17 for what
+- Updates some rules with the stylelint update, see http://stylelint.io/migration-guide/to-17 for what
 - Allow selector attributes with or without quotes
 
 ## [7.0.0] - 2024-03-24
