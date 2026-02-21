@@ -32,9 +32,11 @@ export default {
       true,
       {
         ignoreProperties: [
-          "appearance",
-          "text-size-adjust",
-          "tap-highlight-color",
+          "-webkit-appearance",
+          "-webkit-text-size-adjust",
+          "-webkit-tap-highlight-color",
+          "-webkit-box-orient",
+          "-webkit-line-clamp",
         ],
       },
     ],
@@ -64,11 +66,7 @@ export default {
       true,
       {
         // `-webkit-box` is allowed as standard. See https://www.w3.org/TR/css-overflow-3/#webkit-line-clamp
-        ignoreValues: [
-          "-webkit-box",
-          "-webkit-tap-highlight-color",
-          "-webkit-text-size-adjust",
-        ],
+        ignoreValues: ["-webkit-box"],
       },
     ],
   },
