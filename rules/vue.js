@@ -1,7 +1,7 @@
-const defaultRules = require("./default");
+import defaultRules from "./default.js";
 const valueKeywordCaseOptions = defaultRules.rules["value-keyword-case"][1];
 
-module.exports = {
+export default {
   customSyntax: "postcss-html",
   rules: {
     "function-no-unknown": [true, { ignoreFunctions: ["v-bind"] }],

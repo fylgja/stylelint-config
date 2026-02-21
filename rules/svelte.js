@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   customSyntax: "postcss-html",
   rules: {
     // Adds support for `-global-` syntax

@@ -23,7 +23,7 @@ const extensions = [
   ".ctp",
 ];
 
-module.exports = {
+export default {
   extends: ["stylelint-config-standard", "./rules/default"],
   overrides: [
     {

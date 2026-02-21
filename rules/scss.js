@@ -1,6 +1,6 @@
-const postcssScss = require("postcss-scss");
+import postcssScss from "postcss-scss";
 
-module.exports = {
+export default {
   customSyntax: postcssScss,
   plugins: ["stylelint-scss"],
   rules: {
