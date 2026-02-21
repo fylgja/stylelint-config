@@ -16,6 +16,7 @@ export default {
       },
     ],
     "declaration-empty-line-before": "never",
+    "declaration-property-value-no-unknown": null, // Sadly give false postives for many new CSS functions
     "declaration-no-important": true,
     "font-family-no-duplicate-names": [true, { severity: "warning" }],
     "font-family-no-missing-generic-family-keyword": [
