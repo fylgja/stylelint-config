@@ -1,8 +1,22 @@
-const postcssScss = require("postcss-scss");
-const ignoreAtRules = ["tailwind", "apply", "layer", "screen", "config"];
+import postcssScss from "postcss-scss";
+
+const ignoreAtRules = [
+  "apply",
+  "config",
+  // Tailwind 4
+  "variant",
+  "custom-variant",
+  "plugin",
+  "reference",
+  "theme",
+  "utility",
+  // Tailwind 3
+  "tailwind",
+  "screen",
+];
 const ignoreFunctions = ["theme"];
 
-module.exports = {
+export default {
   rules: {
     "at-rule-no-unknown": [true, { ignoreAtRules }],
     "function-no-unknown": [true, { ignoreFunctions }],
