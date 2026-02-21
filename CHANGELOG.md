@@ -421,7 +421,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Initial release 🎉
 
-[Unreleased]: https://github.com/fylgja/stylelint-config/compare/v7.0.0...HEAD
+[Unreleased]: https://github.com/fylgja/stylelint-config/compare/v8.0.0...HEAD
+
+[8.0.0]: https://github.com/fylgja/stylelint-config/compare/7.0.0...8.0.0
 
 [7.0.0]: https://github.com/fylgja/stylelint-config/compare/6.0.2...7.0.0
 
