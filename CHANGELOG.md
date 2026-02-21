@@ -7,10 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [8.0.1] - 2024-02-21
 
 ### Changed
 
-- Fixed allowed `-webkit-` values and properties
+- Lessen the limit on attributes.
+- Fixed allowed `-webkit-` values and properties.
 
 ## [8.0.0] - 2024-02-21
 

@@ -47,11 +47,10 @@ export default {
         message: (val) => `Expected class selector "${val}" to be kebab-case`,
       },
     ],
-    "selector-max-attribute": 3,
+    "selector-max-attribute": 5,
     "selector-max-class": 5,
     "selector-max-compound-selectors": 5,
     "selector-max-id": 2,
-    "selector-max-type": 3,
     "selector-max-universal": 2,
     "selector-no-qualifying-type": [true, { ignore: ["attribute", "class"] }],
     "selector-pseudo-class-no-unknown": [
