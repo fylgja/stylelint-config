@@ -26,7 +26,7 @@ export default {
     "hue-degree-notation": "number",
     "max-nesting-depth": 5,
     "media-feature-name-no-unknown": [true, { severity: "warning" }],
-    "no-descending-specificity": [true, { severity: "warning" }],
+    "no-descending-specificity": null, // Sadly give false postives for some cases
     "property-no-vendor-prefix": [
       true,
       {
