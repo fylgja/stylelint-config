@@ -37,7 +37,7 @@
     "stylelint-scss": "^7.0.0"
   },
   "devDependencies": {
-    "postcss-html": "^1.8.1",
+    "postcss-html": "^2.0.0",
     "postcss-scss": "^4.0.9"
   },
   "peerDependencies": {
